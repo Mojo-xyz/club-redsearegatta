@@ -292,6 +292,83 @@
 
 #s11 { background-image: var(--img-closing); background-size: cover; background-position: center; }
 #s11::before { content:''; position:absolute; inset:0; background:rgba(237,241,247,0.88); z-index:1; }
+/* ============================================
+   MOBILE RESPONSIVE — 768px and below
+   ============================================ */
+@media (max-width: 768px) {
+
+  .section { padding: 48px 28px; min-height: auto; }
+  .section::after { width: 3px; }
+
+  /* ── TYPOGRAPHY ── */
+  .headline { font-size: 32px; }
+  .subhead  { font-size: 14px; }
+  .eyebrow  { font-size: 9px; letter-spacing: 3px; }
+
+  /* ── COVER ── */
+  .cover-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .cover-hl   { font-size: 44px; }
+  .cover-right { border-left: none; border-top: var(--border-gold); padding-left: 0; padding-top: 28px; flex-direction: row; gap: 32px; flex-wrap: wrap; }
+  .cover-year { font-size: 48px; }
+
+  /* ── GRIDS — all go single column on mobile ── */
+  .grid.g2, .grid.g3, .grid.g4 { grid-template-columns: 1fr; }
+  .stat-row { flex-direction: column; gap: 0; }
+  .stat { border-right: none; border-bottom: 0.5px solid rgba(255,255,255,0.08); }
+  .stat:last-child { border-bottom: none; }
+
+  /* ── PILLAR CLUSTER ── */
+  .pillar-wrap { grid-template-columns: 1fr; }
+  .pillar-winter { flex-direction: column; gap: 6px; }
+  .pillar-winter span:last-child { font-size: 9px; }
+
+  /* ── REVENUE GRID ── */
+  .rev-grid { grid-template-columns: 1fr; }
+
+  /* ── CREDENTIALS ── */
+  .cred { flex-direction: column; gap: 6px; }
+  .cred-title { min-width: unset; }
+
+  /* ── RSS ROLE TWO-COL ── */
+  #s8 .content > div[style*="grid-template-columns:1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline { flex-direction: column; gap: 16px; }
+  .timeline::before { display: none; }
+  .tl-item { padding: 0; }
+  .tl-card { min-height: auto; padding: 16px; }
+
+  /* ── ASK GRID ── */
+  .ask-grid { grid-template-columns: 1fr; }
+
+  /* ── CLOSING ── */
+  .closing-wrap { grid-template-columns: 1fr; gap: 36px; }
+
+  /* ── NAV DOTS ── */
+  .nav-dots { right: 10px; gap: 8px; }
+  .nav-dot  { width: 5px; height: 5px; }
+
+  /* ── CORNER TAG ── */
+  .corner { display: none; }
+
+  /* ── QUOTE BLOCK ── */
+  .quote { margin: 20px 0 28px; padding: 14px 18px; }
+  .quote p { font-size: 14px; }
+}
+
+/* ── TABLET — 769px to 1024px ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section { padding: 52px 48px; }
+  .grid.g3 { grid-template-columns: repeat(2, 1fr); }
+  .grid.g4 { grid-template-columns: repeat(2, 1fr); }
+  .rev-grid { grid-template-columns: repeat(2, 1fr); }
+  .cover-hl { font-size: 52px; }
+  .pillar-wrap { grid-template-columns: 1fr; }
+}
 </style>
 
 <div class="proposal" id="proposal">
