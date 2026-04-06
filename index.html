@@ -41,7 +41,7 @@
   /* === IMAGE SLOTS — replace url() values with your photos === */
   --img-hero:       url('hero.jpg');   /* Cover: sailing yacht, dramatic angle */
   --img-rss:        url('rss.jpg');   /* RSS slide: regatta action shot */
-  --img-clientele:  url('luxury.jpg');   /* Clientele: luxury yacht lifestyle */
+  --img-clientele:  url('luxury-1.jpg');   /* Clientele: luxury yacht lifestyle */
   --img-club:       none;   /* Club model: marina aerial */
   --img-closing:    none;   /* Closing: Red Sea sunset sailing */
 }
@@ -282,13 +282,11 @@
   z-index: 1;
 }
 #s1 { background-image: var(--img-hero); background-size: cover; background-position: center; }
-#s1::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.82); z-index:1; }
+#s1::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.70); z-index:1; }
 
 #s4 { background-image: var(--img-rss); background-size: cover; background-position: center; }
-#s4::before { content:''; position:absolute; inset:0; background:rgba(13,37,69,0.88); z-index:1; }
+#s4::before { content:''; position:absolute; inset:0; background:rgba(13,37,69,0.85); z-index:1; }
 
-#s6 { background-image: var(--img-clientele); background-size: cover; background-position: center; }
-#s6::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.88); z-index:1; }
 
 #s5 { background-image: var(--img-club); background-size: cover; background-position: center; }
 #s5::before { content:''; position:absolute; inset:0; background:rgba(245,247,250,0.90); z-index:1; }
@@ -406,6 +404,7 @@
   <div class="scroll-hint">Scroll to explore</div>
 </section>
 
+
 <!-- ═══ S2 — THE VISION ═══ -->
 <section class="section s-light" id="s2">
   <div class="corner">SOMABAY YACHT CLUB · 2026</div>
@@ -474,6 +473,15 @@
   </div>
 </section>
 
+<!-- IMAGE BREAK — REGATTA -->
+<section style="height:70vh;min-height:400px;background-image:url('drone-2.jpg');background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.75) 0%,transparent 60%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">Red Sea Sails · Event Track Record</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">This is what we bring<br><em style="color:#c9a84c">to SOMABAY's waters.</em></div>
+  </div>
+</section>
+
 <!-- ═══ S5 — CLUB MODEL ═══ -->
 <section class="section s-light" id="s5">
   <div class="corner">SOMABAY YACHT CLUB · 2026</div>
@@ -530,6 +538,24 @@
       <div class="card"><div class="card-title">Corporate & Event Sponsors</div><div class="card-body">High-profile regattas attract premium brand sponsors in finance, automotive, hospitality, and lifestyle — seeking alignment with the Red Sea's new sailing stage and its affluent audience.</div></div>
       <div class="card"><div class="card-title">The Next Generation</div><div class="card-body">A world-class sailing school cultivates long-term community by training hotel guests, residents, and young sailors. Today's student becomes tomorrow's member — and tomorrow's yacht owner.</div></div>
     </div>
+  </div>
+</section>
+<!-- FULL BLEED IMAGE BREAK -->
+<section style="
+  height: 70vh;
+  min-height: 400px;
+  background-image: url('luxury-1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px 72px;
+">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(7,25,46,0.7) 0%, transparent 60%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The Red Sea Experience</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">Life aboard the Red Sea.<br><em style="color:#c9a84c">This is what we're building.</em></div>
   </div>
 </section>
 
@@ -593,6 +619,15 @@
       <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">Oct 2026</div><div class="tl-title">Marina Grand Opening</div><div class="tl-body">Celebratory regatta. 20 international brokers. VIP showcase. Official Yacht Club launch event.</div></div></div>
       <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Q4 2026</div><div class="tl-title">Yacht Club Formation</div><div class="tl-body">Full club structure, membership programme, and winter yacht program fully operational.</div></div></div>
     </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK — BEACH LIFESTYLE -->
+<section style="height:70vh;min-height:400px;background-image:url('beach.jpg');background-size:cover;background-position:center top;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.7) 0%,transparent 60%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The SOMABAY Experience</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">The destination is ready.<br><em style="color:#c9a84c">The partnership begins now.</em></div>
   </div>
 </section>
 
