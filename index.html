@@ -418,19 +418,15 @@
   /* ── QUOTE BLOCK ── */
   .quote { margin: 20px 0 28px; padding: 14px 18px; }
   .quote p { font-size: 14px; }
-}
-
   /* ── CONTENTS ── */
   .contents-grid { grid-template-columns: 1fr; }
-
   /* ── RSS S4B inline grid fix ── */
   #s4b .content > div[style*="grid-template-columns"] {
     display: flex !important;
     flex-direction: column !important;
     gap: 28px !important;
   }
-
-  /* ── TABLET ── */
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .section { padding: 52px 48px; }
@@ -484,56 +480,67 @@
     <div class="divider"></div>
     <div class="subhead" style="margin-bottom:8px">Ten sections. A complete picture of the SOMABAY Yacht Club — what it is, who it attracts, and how it works.</div>
     <div class="contents-grid">
+
       <a class="contents-item ci-gold" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">01</div>
         <div><div class="contents-title">The Vision</div><div class="contents-desc">What the SOMABAY Yacht Club is and why it matters</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">02</div>
         <div><div class="contents-title">Why Now</div><div class="contents-desc">The opportunity, the timing, and the market</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item ci-gold" onclick="document.getElementById('s3b').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">03</div>
         <div><div class="contents-title">The Mediterranean Window</div><div class="contents-desc">Why the world's sailors are looking toward the Red Sea</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">04</div>
         <div><div class="contents-title">Red Sea Sails</div><div class="contents-desc">11 years of proven excellence — our credentials</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item ci-gold" onclick="document.getElementById('s4b').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">05</div>
         <div><div class="contents-title">The FX Winter Program</div><div class="contents-desc">A committed European fleet pipeline — not a concept</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">06</div>
         <div><div class="contents-title">The Club Model</div><div class="contents-desc">Four pillars under one umbrella</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item ci-gold" onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">07</div>
         <div><div class="contents-title">Clientele & Maritime World</div><div class="contents-desc">Who the club attracts — from sailors to superyachts</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">08</div>
         <div><div class="contents-title">Revenue Generation</div><div class="contents-desc">Six interlocking streams driving value for SOMABAY</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item ci-gold" onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">09</div>
         <div><div class="contents-title">The RSS Role</div><div class="contents-desc">Co-founder, operator, and network — all in one</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
       <a class="contents-item" onclick="document.getElementById('s10').scrollIntoView({behavior:'smooth'});return false;" href="#">
         <div class="contents-num">10</div>
         <div><div class="contents-title">The Partnership Ask</div><div class="contents-desc">What we need from SOMABAY to begin</div></div>
         <span class="contents-arrow">→</span>
       </a>
+
     </div>
   </div>
 </section>
@@ -906,7 +913,7 @@
         </div>
         <div class="contact-block">
           <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:16px">Red Sea Sails — Contact</div>
-          <div class="c-row"><span class="c-label">Email</span><span class="c-val">mo@redseasails.com</span></div>
+          <div class="c-row"><span class="c-label">Email</span><span class="c-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b16143b091e1f081e1a081a12170855181416">[email&#160;protected]</a></span></div>
           <div class="c-row"><span class="c-label">Phone</span><span class="c-val">+20 120 6560 777</span></div>
           <div class="c-row"><span class="c-label">Web</span><span class="c-val">www.redseasails.com</span></div>
         </div>
@@ -917,15 +924,9 @@
 
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const sections = document.querySelectorAll('.section');
 const navWrap  = document.getElementById('navDots');
 sections.forEach((s,i)=>{
   const d = document.createElement('div');
-  d.className = 'nav-dot'+(i===0?' active':'');
-  d.onclick = ()=>s.scrollIntoView({behavior:'smooth'});
-  navWrap.appendChild(d);
-});
-const dots = navWrap.querySelectorAll('.nav-dot');
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=
+  d.className = 'nav-dot'
