@@ -1,0 +1,11 @@
+.DS_Store
+*.sb-*
+index_.html
+somabay_v*.html
+somabay_yacht_club_*.html
+*.bak
+node_modules/
+.env*
+
+360.MP4
+*.MP4
