@@ -9,6 +9,7 @@
   gtag('config', 'G-6WS8BNZ2EF');
 </script>
 <meta charset="UTF-8">
+<title>SOMABAY Yacht Club · Strategic Partnership Proposal · Red Sea Sails</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 /* ============================================
@@ -299,7 +300,8 @@
 
 /* ── SECTION IMAGE BACKGROUNDS ── */
 #s1 { background-image: var(--img-hero); background-size:cover; background-position:center; }
-#s1::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.70); z-index:1; }
+#s1::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.40); z-index:1; }
+#s1 .hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
 #s4 { background-image: var(--img-rss); background-size:cover; background-position:center; }
 #s4::before { content:''; position:absolute; inset:0; background:rgba(13,37,69,0.85); z-index:1; }
 #s5 { background-image: var(--img-club); background-size:cover; background-position:center; }
@@ -376,6 +378,14 @@
 
 <!-- ═══ S1 — COVER ═══ -->
 <section class="section s-white" id="s1">
+  <video class="hero-video" id="heroVideo" autoplay muted playsinline poster="hero-1.png">
+  <source src="soma-cats.mp4#t=2" type="video/mp4">
+</video>
+<script>
+  const heroVideo = document.getElementById('heroVideo');
+  heroVideo.addEventListener('loadedmetadata', () => { heroVideo.currentTime = 2; });
+  heroVideo.addEventListener('ended', () => { heroVideo.currentTime = 2; heroVideo.play(); });
+</script>
   <div class="corner">SOMABAY YACHT CLUB · 2026</div>
   <div class="content">
     <div class="cover-wrap">
@@ -388,7 +398,7 @@
           <div>
             <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px">Operator</div>
             <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--text-primary)">Red Sea Sails</div>
-            <div style="font-size:11px;color:var(--text-muted);margin-top:3px">Est. 2014 · 11 Years</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:3px">Est. 2015 · 11 Years</div>
           </div>
           <div style="width:1px;background:var(--border-gold);opacity:1"></div>
         </div>
@@ -525,6 +535,43 @@
       <div class="card"><div class="card-num">01</div><div class="card-title">The Club</div><div class="card-body">A members-only sailing institution at SOMABAY — a prestigious Red Sea address with a curated community of Egyptian and international yacht owners, sailors, and luxury guests.</div></div>
       <div class="card card-gold"><div class="card-num">02</div><div class="card-title">The Platform</div><div class="card-body">Every activity — events, charters, school, berth management, and the winter program — operates as a revenue-generating pillar beneath the Yacht Club umbrella.</div></div>
       <div class="card"><div class="card-num">03</div><div class="card-title">The Legacy</div><div class="card-body">A landmark that elevates SOMABAY's brand, drives real estate value, and positions the Red Sea as a world-class international yachting destination.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VIDEO BREAK — SAILING FESTIVAL FOOTAGE (between 02 and 03) ═══ -->
+<section class="section s-light" id="s2b">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow">From the Water at SOMABAY</div>
+    <div class="headline">Before the Proposal, <em>There Was the Festival.</em></div>
+    <div class="divider"></div>
+    <div class="grid g2" style="margin-top:8px">
+
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:56.25% 0 0 0;position:relative;background:#000">
+          <iframe src="https://player.vimeo.com/video/1204962739?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            title="SOMABAY Sailing Festival"></iframe>
+        </div>
+        <div style="padding:14px 18px;font-size:11px;letter-spacing:1px;color:var(--steel-dim);text-transform:uppercase">SOMABAY Sailing Festival · May 2026</div>
+      </div>
+
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:56.25% 0 0 0;position:relative;background:#000">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4040759756057537%2F&show_text=false&width=560&t=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            title="Red Sea Sails Fleet"></iframe>
+        </div>
+        <div style="padding:14px 18px;font-size:11px;letter-spacing:1px;color:var(--steel-dim);text-transform:uppercase">Red Sea Sails · On Location at SOMABAY</div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -677,7 +724,7 @@
       <div class="creds">
         <div class="cred cred-gold" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08)">
           <div class="cred-title" style="color:#fff">Operational Track Record</div>
-          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Organizer of the Red Sea Sailing Regatta, El Gouna Sailing Festival, and ETA Cup Series — Egypt's most prestigious sailing events across 11 continuous years on the Red Sea.</div>
+          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Organizer of the Red Sea Sailing Regatta, El Gouna Sailing Festival, and ETA Cup Series — Egypt's most prestigious sailing events — 23 regattas delivered on the Red Sea since 2022.</div>
         </div>
         <div class="cred" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.07)">
           <div class="cred-title" style="color:#fff">Club Operations & Event Production</div>
@@ -691,6 +738,13 @@
           <div class="cred-title" style="color:#fff">Elite Network & Strategic Partners</div>
           <div class="cred-body" style="color:rgba(255,255,255,0.6)">Direct relationships with Egyptian and international HNW yacht owners. Felix Maritime (since 1983) and FX Yachting (Greece) — together an unmatched pipeline of international vessels, clients, and brokers. Leadership backed by founders from Egypt's finance sector.</div>
         </div>
+      </div>
+      <!-- Media proof — SOMABAY Sailing Festival, May 2026 -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:0.5px solid rgba(255,255,255,0.14)">
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--gold);line-height:1">490K</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Organic Views · May 2026</div></div>
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;line-height:1">181K</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Accounts Reached</div></div>
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;line-height:1">23</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Boats · SOMABAY Festival</div></div>
+        <div style="padding:16px 20px"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--gold);line-height:1">100%</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Organic · Zero Paid Media</div></div>
       </div>
     </div>
   </div>
@@ -862,7 +916,7 @@
       <div class="rev-card rc-gold"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><div class="rev-label">Events & Sponsorship</div><div class="rev-body">Regattas and sailing festivals attract national and international brand sponsors. SOMABAY's name reaches sailing audiences across Egypt, Europe, and the Gulf. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$300–500K</span></div></div></div>
       <div class="rev-card rc-teal"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/><circle cx="12" cy="16" r="1" fill="var(--teal)"/></svg><div class="rev-label">Real Estate Value</div><div class="rev-body">Yacht clubs are proven real estate value drivers worldwide. The SOMABAY Yacht Club positions the development as a sailing lifestyle community — supporting premium property pricing. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">Pricing premium</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">+5–15%</span></div></div></div>
     </div>
-    <p style="font-size:11px;color:var(--text-muted);margin-top:20px;font-style:italic;line-height:1.6">At-maturity annual estimates — steady-state contribution once the club is established and the Winter Yacht Program reaches full scale, consistent with the phased economic model that follows. Year one is a fraction of these figures; the ramp follows fleet growth and marina capacity over three to four seasons. Conservative low–high ranges, inclusive of the Winter Yacht Program.</p>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:20px;font-style:italic;line-height:1.6">At-maturity annual estimates for core Club operations at steady state. The Winter Yacht Program is additional to these figures — its phased economics follow in Section 07, reaching $1.05–2.85M annually at full scale. Year one is a fraction of these figures; the ramp follows fleet growth and marina capacity over three to four seasons. Conservative low–high ranges.</p>
   </div>
 </section>
 
@@ -875,15 +929,15 @@
     <div class="eyebrow eyebrow-gold">07 · The Winter Yacht Program · The Numbers</div>
     <div class="headline headline-white">When the Med closes, <em>SOMABAY opens.</em></div>
     <div class="divider"></div>
-    <div class="subhead" style="color:rgba(255,255,255,0.7)">Every October, thousands of Mediterranean yachts look for a warm-water winter home. The Caribbean takes most. The Red Sea is the natural alternative — closer, more interesting, and now open to foreign-flagged vessels. A phased programme: conservative in year one, scaling as infrastructure and reputation grow together.</div>
+    <div class="subhead" style="color:rgba(255,255,255,0.7)">Every October, thousands of Mediterranean yachts look for a warm-water winter home. The Caribbean takes most. The Red Sea is the natural alternative — closer, more interesting, and now open to foreign-flagged vessels. A phased programme: conservative in year one, scaling as infrastructure and reputation grow together. SOMABAY serves as the fleet’s winter home port — yachts sail out for regattas along the coast and return to base, keeping the berths, the crews, and the spend at SOMABAY.</div>
 
     <!-- structural stats -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:0.5px solid rgba(255,255,255,0.12);margin:32px 0 40px">
       <div style="padding:20px 24px;border-right:0.5px solid rgba(255,255,255,0.12)">
-        <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">~22,000</div>
-        <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">Global Charter Fleet</div>
-        <div style="font-size:11.5px;color:rgba(255,255,255,0.55);line-height:1.6;margin-top:8px">Europe holds 44% of global revenue.</div>
-      </div>
+  <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">~15,000</div>
+  <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">Charter Vessels in Europe</div>
+  <div style="font-size:11.5px;color:rgba(255,255,255,0.55);line-height:1.6;margin-top:8px">Greece alone runs 5,600+ charter boats — the closest major fleet to the Red Sea. Croatia adds 4,378 more. 70%+ of the global fleet sits in the Med at peak, idle from October.</div>
+</div>
       <div style="padding:20px 24px;border-right:0.5px solid rgba(255,255,255,0.12)">
         <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--teal);line-height:1;margin-bottom:6px">Oct–Apr</div>
         <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">The Med Pause</div>
@@ -907,7 +961,7 @@
         <div style="margin-top:16px;border-top:0.5px solid rgba(255,255,255,0.12);padding-top:14px;font-size:12px">
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Berth Revenue</span><span style="color:#fff">~$50–135K</span></div>
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Crew &amp; Owner Spend</span><span style="color:#fff">~$125–375K</span></div>
-          <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.55)"><span>Season</span><span style="color:#fff">Nov–Apr · 5 mo</span></div>
+          <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.55)"><span>Season</span><span style="color:#fff">Nov–Apr · 5 mo (arrivals from late Oct)</span></div>
         </div>
       </div>
       <div style="padding:24px;border:0.5px solid rgba(255,255,255,0.12);border-top:3px solid var(--gold)">
@@ -995,6 +1049,48 @@
   </div>
 </section>
 
+<!-- ═══ S7X — BENCHMARKS (berth-rate proof, backup for revenue challenge) ═══ -->
+<section class="section s-lighter" id="s7x">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow eyebrow-gold">07 · The Winter Yacht Program · Benchmarked</div>
+    <div class="headline">Our assumptions, priced against <em>the world.</em></div>
+    <div class="divider"></div>
+    <div class="subhead">The winter fleet: 60–80ft catamarans through FX Yachting, with the bulk in 35–50ft monohulls. The model assumes $1,000–1,800 per yacht per month — below is what comparable berths cost across the Mediterranean and the Gulf.</div>
+
+    <div style="border:var(--border-navy);margin:32px 0 24px;font-size:12px">
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;background:rgba(7,25,46,0.06);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">
+        <div style="padding:12px 16px">Market</div><div style="padding:12px 16px">35–50ft Monohull · /mo</div><div style="padding:12px 16px">60–80ft Catamaran · /mo</div><div style="padding:12px 16px">Basis</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Türkiye · Marmaris &amp; Göcek</div><div style="padding:14px 16px">$1,000–2,950</div><div style="padding:14px 16px">$1,750–4,750</div><div style="padding:14px 16px;color:var(--text-secondary)">Wet berth at €3–6 per metre per day — the Med's value tier</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">French Med · 32-port survey</div><div style="padding:14px 16px">~$465 <span style="color:var(--text-muted)">(12m)</span></div><div style="padding:14px 16px">~$655 <span style="color:var(--text-muted)">(12m cat)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">Municipal annual contracts (2021, risen since) · catamaran premium ≈ +40%</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Premium Med · winter monthly</div><div style="padding:14px 16px;grid-column:span 2">$2,000–5,000 <span style="color:var(--text-muted)">(12–20m, indicative)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">Peak €150–500+/night for 12–20m; winter ≈ half of summer, long-term −20–30%</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Dubai Marina</div><div style="padding:14px 16px;grid-column:span 2">$680–3,400 <span style="color:var(--text-muted)">(by vessel size)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">AED 30,000–150,000 per year</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Dubai Harbour · new build</div><div style="padding:14px 16px;grid-column:span 2">from ~$1,810 · prime peak $2,700+</div><div style="padding:14px 16px;color:var(--text-secondary)">Annual from AED 80,000 mid-size · peak season runs Nov–Apr</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 4fr;border-top:2px solid var(--gold);background:rgba(201,168,76,0.08)">
+        <div style="padding:16px;font-weight:700;color:var(--text-primary)">SOMABAY · model assumption</div><div style="padding:16px;font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gold)">$1,000–1,800 per yacht per month — above the value tier, below premium winter rates</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--gold)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">The Same Window</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">The Gulf's peak marina season is November–April — the region's premium marinas price highest in exactly the months SOMABAY sells.</div></div>
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--teal)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Catamaran Upside</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Wide-beam vessels carry a documented berth premium (~+40% in the French survey). 15 of the 30 dedicated berths are catamaran berths — upside not fully modeled.</div></div>
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--gold)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Conservative by Design</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">The model prices SOMABAY as a value-competitive winter home at a world-class standard — not a discount play, and not a stretch.</div></div>
+    </div>
+    <p style="font-size:10px;color:var(--text-muted);margin-top:20px;font-style:italic">Sources: Voiles et Voiliers 32-port French Mediterranean survey (2021) · Marmaris/Göcek wet-berth market rates (2026) · Dubai marina market data (2025–26). Long-term contracts typically discount 10–20% vs monthly rates. USD conversions approximate.</p>
+  </div>
+</section>
+
 <!-- ═══ S7C — THE GLOBAL NETWORK (merged from gouna · 07 The Global Network) ═══ -->
 <!-- IMAGE BREAK — WINTER FLEET -->  <!-- SWAP: src below -> your wintering yachts / marina at berth photo -->
 <section style="height:70vh;min-height:380px;background-image:url('luxury.jpg');background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
@@ -1049,8 +1145,8 @@
     <div class="headline">A Phased Path to <em>Full Club Operations</em></div>
     <div class="divider"></div>
     <div class="timeline">
-      <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Mar 2026</div><div class="tl-title">Branded Sailing Activation</div><div class="tl-body">First branded sailing presence at SOMABAY. Proof of concept and visibility with key stakeholders and guests.</div></div></div>
-      <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">May 14–16</div><div class="tl-title">SOMABAY Sailing Festival</div><div class="tl-body">Spring regatta at SOMABAY. 10–15 yachts, sailing village, media, VIPs, and international spectators.</div></div></div>
+      <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Mar 2026 · Delivered ✓</div><div class="tl-title">Branded Sailing Activation</div><div class="tl-body">First branded sailing presence at SOMABAY — proof of concept delivered, with visibility across key stakeholders and guests.</div></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">May 14–16 · Delivered ✓</div><div class="tl-title">SOMABAY Sailing Festival</div><div class="tl-body">15 cruising yachts and a Federation youth fleet — 23 boats and 150+ participants in total. Sailing village, VIPs, and 490K organic views in May alone.</div></div></div>
       <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">Q3 2026</div><div class="tl-title">Charter & School Launch</div><div class="tl-body">Charter operations begin. Sailing school Phase 1 opens for hotel guests, residents, and students.</div></div></div>
       <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">Oct 2026</div><div class="tl-title">Marina Grand Opening</div><div class="tl-body">Celebratory regatta. 20 international brokers. VIP showcase. Official Yacht Club launch event.</div></div></div>
       <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Q4 2026</div><div class="tl-title">Yacht Club Launch</div><div class="tl-body">Full club structure, membership programme, and winter yacht program fully operational.</div></div></div>
@@ -1063,7 +1159,7 @@
         <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--teal)">
           <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2026</div>
           <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Open the Door</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Club established · sailing festival · winter pilot of 10–15 yachts. Show what's possible.</div>
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Sailing festival delivered · club established · winter pilot of 10–15 yachts. Show what's possible.</div>
         </div>
         <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--gold)">
           <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2027</div>
@@ -1106,7 +1202,7 @@
         </div>
       </div>
       <div style="border:0.5px solid rgba(201,168,76,0.3);background:rgba(255,255,255,0.03)">
-        <div style="aspect-ratio:16/9;overflow:hidden"><img src="world.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="aspect-ratio:16/9;overflow:hidden"><img src="marti-world.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
         <div style="padding:22px 24px">
           <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">World Sailing</div>
           <div style="font-family:var(--font-display);font-size:19px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px">World Sailing Recognised Event</div>
@@ -1194,7 +1290,7 @@
     </div>
     <div class="ask-grid">
       <div class="ask-item"><div class="ask-num">05</div><div><div class="ask-title">Permanent Clubhouse & Beach</div><div class="ask-body">A dedicated permanent home for the club within the completed marina, with a club beach amenity for members and guests.</div></div></div>
-      <div class="ask-item"><div class="ask-num">06</div><div><div class="ask-title">Expanding Berth Allocation</div><div class="ask-body">A growing allocation of sailing yacht berths as the winter fleet and resident community scale, season over season.</div></div></div>
+      <div class="ask-item"><div class="ask-num">06</div><div><div class="ask-title">Expanding Berth Allocation</div><div class="ask-body">A growing allocation of sailing yacht berths as the winter fleet and resident community scale — building to 30 dedicated sailing berths (15 catamaran, 15 monohull) at marina completion, managed by RSS under the Club.</div></div></div>
       <div class="ask-item"><div class="ask-num">07</div><div><div class="ask-title">Event Support</div><div class="ask-body">SOMABAY's active participation in hosting events: accommodation, F&B access, venue support, local permissions, and marketing amplification.</div></div></div>
       <div class="ask-item"><div class="ask-num">08</div><div><div class="ask-title">Commercial Framework</div><div class="ask-body">A mutually beneficial agreement covering revenue sharing, berth fee structures, charter referrals, and school operations — to be defined together.</div></div></div>
       <div class="ask-item"><div class="ask-num">09</div><div><div class="ask-title">Strategic Commitment</div><div class="ask-body">A long-term partnership framing — not a seasonal arrangement. The SOMABAY Yacht Club is a permanent institution, and we are committed to building it as one.</div></div></div>
@@ -1222,11 +1318,12 @@
         <div class="contact-block">
           <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:16px">Red Sea Sails — Contact</div>
           <div class="c-row"><span class="c-label">Email</span><span class="c-val"><a href="mailto:mo@redseasails.com" style="color:var(--text-secondary);text-decoration:none">mo@redseasails.com</a></span></div>
-          <div class="c-row"><span class="c-label">Phone</span><span class="c-val">+20 120 6560 777</span></div>
-          <div class="c-row"><span class="c-label">Web</span><span class="c-val">www.redseasails.com</span></div>
+          <div class="c-row"><span class="c-label">Phone</span><span class="c-val">+20 1270 247 317 · +20 120 6560 777</span></div>
+          <div class="c-row"><span class="c-label">Web</span><span class="c-val"><a href="https://www.redseasails.com" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none">www.redseasails.com</a></span></div>
+<div class="c-row"><span class="c-label">Web</span><span class="c-val"><a href="https://www.redsearegatta.com" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none">www.redsearegatta.com</a></span></div>
         </div>
         <div class="closing-quote">
-          <p>The Red Sea is ready for its defining sailing address.<br>SOMABAY is the only place it belongs.</p>
+          <p>A defining sailing address for the Red Sea — starting at SOMABAY.</p>
         </div>
       </div>
     </div>
