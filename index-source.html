@@ -1,0 +1,1373 @@
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WS8BNZ2EF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6WS8BNZ2EF');
+</script>
+<meta charset="UTF-8">
+<title>SOMABAY Yacht Club · Strategic Partnership Proposal · Red Sea Sails</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ============================================
+   THEME VARIABLES
+   ============================================ */
+:root {
+  --bg-primary:     #ffffff;
+  --bg-secondary:   #f5f7fa;
+  --bg-tertiary:    #edf1f7;
+  --bg-navy:        #0d2545;
+  --bg-navy-mid:    #1a4072;
+  --bg-navy-deep:   #07192e;
+  --gold:           #1f6f8b;
+  --gold-light:     #f5ecd4;
+  --gold-dim:       rgba(184,150,46,0.2);
+  --teal:           #1c7293;
+  --teal-light:     #e4f2f8;
+  --warm:           #8b2635;
+  --warm-light:     #f9eef1;
+  --text-primary:   #0d2545;
+  --text-secondary: #3d5a72;
+  --text-muted:     #7a97b0;
+  --text-white:     #ffffff;
+  --text-white-dim: rgba(255,255,255,0.75);
+  --font-display:   'Playfair Display', Georgia, serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+  --border:         0.5px solid #dde4ed;
+  --border-gold:    0.5px solid rgba(184,150,46,0.35);
+  --border-navy:    0.5px solid rgba(13,37,69,0.15);
+  --img-hero:       url('hero-1.png');
+  --img-rss:        url('rss.jpg');
+  --img-clientele:  url('luxury-1.jpg');
+  --img-club:       none;
+  --img-closing:    none;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+.proposal { font-family: var(--font-body); background: var(--bg-secondary); width:100%; }
+
+/* ── SECTION SHELL ── */
+.section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 72px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.s-white   { background: var(--bg-primary); }
+.s-light   { background: var(--bg-secondary); }
+.s-lighter { background: var(--bg-tertiary); }
+.s-navy    { background: var(--bg-navy); }
+.s-navy-mid{ background: var(--bg-navy-mid); }
+
+.s-white::after, .s-light::after, .s-lighter::after {
+  content:''; position:absolute; left:0; top:0; bottom:0;
+  width:4px; background:var(--gold);
+}
+.s-navy::after, .s-navy-mid::after {
+  content:''; position:absolute; left:0; top:0; bottom:0;
+  width:4px; background:var(--gold);
+}
+
+.content { position:relative; z-index:2; max-width:1100px; width:100%; }
+
+/* ── TYPOGRAPHY ── */
+.eyebrow {
+  font-size:10px; font-weight:500; letter-spacing:4px;
+  color:var(--teal); text-transform:uppercase; margin-bottom:16px;
+}
+.eyebrow-gold { color:var(--gold); }
+.headline {
+  font-family:var(--font-display);
+  font-size:clamp(30px,4vw,52px);
+  font-weight:700; color:var(--text-primary);
+  line-height:1.1; margin-bottom:8px;
+}
+.headline-white { color:var(--text-white); }
+.headline em    { color:var(--gold); font-style:italic; }
+.headline-white em { color:var(--gold); }
+.subhead {
+  font-size:clamp(13px,1.6vw,16px);
+  color:var(--text-secondary);
+  line-height:1.75; max-width:640px; margin-top:6px;
+}
+.subhead-white { color:var(--text-white-dim); }
+.divider { position:relative; width:54px; height:2px; background:var(--warm); margin:26px 0 28px; opacity:1; }
+.divider::after { content:''; position:absolute; right:-5px; top:-3px; width:8px; height:8px; background:var(--warm); transform:rotate(45deg); }
+.divider-teal { background:var(--teal); }
+.divider-teal::after { background:var(--teal); }
+
+/* ── QUOTE BLOCK ── */
+.quote {
+  border-left:3px solid var(--warm);
+  padding:18px 24px; margin:28px 0 36px;
+  max-width:700px; background:var(--gold-light);
+}
+.quote p {
+  font-family:var(--font-display);
+  font-size:clamp(13px,1.6vw,16px);
+  font-style:italic; color:var(--text-secondary); line-height:1.8;
+}
+.quote-dark { background:rgba(255,255,255,0.07); border-left-color:var(--warm); }
+.quote-dark p { color:var(--text-white-dim); }
+
+/* ── STAT ROW ── */
+.stat-row { display:flex; gap:0; margin-bottom:36px; }
+.stat {
+  flex:1; padding:24px 28px; background:var(--bg-navy);
+  border-right:0.5px solid rgba(255,255,255,0.08); position:relative;
+}
+.stat:last-child { border-right:none; }
+.stat::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold); }
+.stat-num { font-family:var(--font-display); font-size:40px; font-weight:700; color:var(--gold); line-height:1; }
+.stat-label { font-size:10px; color:rgba(255,255,255,0.5); letter-spacing:1px; margin-top:6px; text-transform:uppercase; }
+
+/* ── CARDS ── */
+.grid { display:grid; gap:16px; }
+.g3 { grid-template-columns:repeat(3,1fr); }
+.g2 { grid-template-columns:repeat(2,1fr); }
+.g4 { grid-template-columns:repeat(4,1fr); }
+.card { background:var(--bg-primary); border:var(--border-navy); padding:28px 24px; position:relative; }
+.card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--teal); }
+.card-gold::before { background:var(--warm); }
+.card-navy { background:var(--bg-navy); border-color:transparent; }
+.card-navy::before { background:var(--gold); }
+.card-num  { font-family:var(--font-display); font-size:26px; font-weight:700; color:var(--gold-dim); line-height:1; margin-bottom:10px; }
+.card-num-solid { color:var(--gold); opacity:0.4; }
+.card-title { font-family:var(--font-display); font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:10px; }
+.card-title-white { color:var(--text-white); }
+.card-body  { font-size:12.5px; color:var(--text-secondary); line-height:1.75; }
+.card-body-white { color:var(--text-white-dim); }
+
+/* ── CRED ROWS ── */
+.creds { display:flex; flex-direction:column; gap:10px; }
+.cred {
+  display:flex; gap:20px; align-items:flex-start;
+  padding:18px 22px; background:var(--bg-primary);
+  border:var(--border-navy); border-left:3px solid var(--teal);
+}
+.cred-gold { border-left-color:var(--gold); }
+.cred-title { font-size:13px; font-weight:500; color:var(--text-primary); min-width:210px; padding-top:1px; }
+.cred-body  { font-size:12px; color:var(--text-secondary); line-height:1.7; }
+
+/* ── PILLAR CLUSTER ── */
+.pillar-wrap { border:var(--border-gold); margin-top:36px; display:grid; grid-template-columns:1fr 1fr; gap:0; }
+.pillar-crown { grid-column:1/-1; background:var(--bg-navy); padding:20px 32px; text-align:center; }
+.pillar-crown-title { font-family:var(--font-display); font-size:20px; font-weight:700; color:var(--gold); letter-spacing:1px; }
+.pillar-crown-sub   { font-size:10px; color:rgba(255,255,255,0.45); letter-spacing:3px; text-transform:uppercase; margin-top:4px; }
+.pillar-item { padding:28px 28px; border:var(--border-gold); position:relative; background:var(--bg-primary); }
+.pillar-item::before { content:''; position:absolute; top:0; left:0; bottom:0; width:3px; background:var(--teal); }
+.pillar-tag  { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+.pillar-name { font-family:var(--font-display); font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:10px; }
+.pillar-desc { font-size:12px; color:var(--text-secondary); line-height:1.75; }
+.pillar-winter { grid-column:1/-1; background:var(--teal); padding:14px 28px; display:flex; align-items:center; justify-content:space-between; }
+.pillar-winter span { font-size:11px; color:rgba(255,255,255,0.9); letter-spacing:0.5px; }
+
+/* ── REVENUE GRID ── */
+.rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:32px; }
+.rev-card { padding:24px 20px; background:var(--bg-primary); border:var(--border-navy); position:relative; }
+.rev-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; }
+.rc-gold::before { background:var(--gold); }
+.rc-teal::before { background:var(--teal); }
+.rev-label { font-size:13px; font-weight:500; color:var(--text-primary); margin-bottom:10px; }
+.rev-body  { font-size:11.5px; color:var(--text-secondary); line-height:1.75; }
+
+/* ── TIMELINE ── */
+.timeline { display:flex; gap:0; margin-top:40px; position:relative; }
+.timeline::before { content:''; position:absolute; top:14px; left:14px; right:14px; height:1px; background:var(--teal); opacity:0.3; }
+.tl-item  { flex:1; padding:0 6px; position:relative; }
+.tl-dot   { width:12px; height:12px; border-radius:50%; background:var(--teal); border:2.5px solid var(--bg-secondary); margin-bottom:14px; position:relative; z-index:2; }
+.tl-dot-gold { background:var(--gold); }
+.tl-date  { font-size:10px; color:var(--teal); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
+.tl-date-gold { color:var(--gold); }
+.tl-card  { background:var(--bg-primary); border:var(--border-navy); padding:16px 14px; min-height:150px; }
+.tl-title { font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--text-primary); margin-bottom:8px; line-height:1.3; }
+.tl-body  { font-size:10.5px; color:var(--text-secondary); line-height:1.7; }
+
+/* ── ASK GRID ── */
+.ask-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:32px; }
+.ask-item { display:flex; gap:16px; padding:20px 22px; background:var(--bg-primary); border:var(--border-navy); border-left:3px solid var(--bg-navy); align-items:flex-start; }
+.ask-num   { font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--gold); min-width:30px; line-height:1; }
+.ask-title { font-size:13px; font-weight:500; color:var(--text-primary); margin-bottom:5px; }
+.ask-body  { font-size:11.5px; color:var(--text-secondary); line-height:1.7; }
+
+/* ── NAV DOTS ── */
+.nav-dots { position:fixed; right:22px; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:10px; z-index:100; }
+.nav-dot  { width:6px; height:6px; border-radius:50%; background:rgba(13,37,69,0.2); cursor:pointer; transition:all 0.2s; }
+.nav-dot.active, .nav-dot:hover { background:var(--gold); transform:scale(1.5); }
+
+/* ── CORNER TAG ── */
+.corner { position:absolute; top:28px; right:72px; font-size:9px; letter-spacing:3px; color:var(--text-muted); text-transform:uppercase; z-index:3; }
+.corner-white { color:rgba(255,255,255,0.3); }
+
+/* ── COVER ── */
+.cover-wrap { display:grid; grid-template-columns:1fr 260px; gap:60px; align-items:center; }
+.cover-right { border-left:var(--border-gold); padding-left:44px; display:flex; flex-direction:column; gap:28px; }
+.cover-year { font-family:var(--font-display); font-size:68px; font-weight:700; color:var(--gold); line-height:1; opacity:0.5; }
+.cover-badge { font-size:10px; letter-spacing:3px; color:var(--text-muted); text-transform:uppercase; line-height:2.2; }
+.partner-tag { display:inline-block; padding:6px 14px; border:var(--border-gold); font-size:10px; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:12px; }
+.cover-hl { font-family:var(--font-display); font-size:clamp(44px,6vw,68px); font-weight:700; color:var(--text-primary); line-height:1.0; }
+.cover-hl span { color:var(--gold); display:block; }
+
+/* ── CLOSING ── */
+.closing-wrap { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+.steps { display:flex; flex-direction:column; gap:0; }
+.step { display:flex; gap:16px; align-items:flex-start; padding:14px 0; border-bottom:var(--border); }
+.step:last-child { border-bottom:none; }
+.step-circle { width:28px; height:28px; border-radius:50%; background:var(--bg-navy); color:var(--gold); font-size:11px; font-weight:500; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.step-text  { font-size:13px; color:var(--text-secondary); line-height:1.6; padding-top:4px; }
+.contact-block { margin-top:32px; padding:24px 28px; background:var(--bg-secondary); border:var(--border-gold); }
+.c-row   { display:flex; gap:12px; margin-bottom:10px; align-items:center; }
+.c-label { font-size:10px; letter-spacing:2px; color:var(--text-muted); text-transform:uppercase; min-width:60px; }
+.c-val   { font-size:13px; color:var(--text-secondary); }
+.closing-quote { margin-top:32px; padding:24px 28px; border:var(--border-gold); background:var(--gold-light); }
+.closing-quote p { font-family:var(--font-display); font-size:15px; font-style:italic; color:var(--text-secondary); line-height:1.7; text-align:center; }
+
+/* ── ICONS ── */
+.s-icon { display:block; margin-bottom:12px; }
+
+/* scroll hint */
+.scroll-hint { position:absolute; bottom:28px; right:72px; font-size:9px; letter-spacing:2px; color:var(--text-muted); text-transform:uppercase; z-index:3; display:flex; align-items:center; gap:10px; }
+.scroll-hint::after { content:''; display:block; width:32px; height:1px; background:var(--gold); opacity:0.5; }
+
+/* ── CONTENTS NAV ── */
+.contents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 40px;
+}
+.contents-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 24px;
+  background: var(--bg-primary);
+  border: var(--border-navy);
+  border-left: 3px solid var(--teal);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.contents-item:hover {
+  border-left-color: var(--gold);
+  background: var(--bg-secondary);
+  transform: translateX(3px);
+}
+.contents-item.ci-gold { border-left-color: var(--gold); }
+.contents-num {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  min-width: 28px;
+  opacity: 0.5;
+}
+.contents-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.contents-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.contents-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--gold);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.contents-item:hover .contents-arrow { opacity: 1; }
+
+/* ── SECTION IMAGE BACKGROUNDS ── */
+#s1 { background-image: var(--img-hero); background-size:cover; background-position:center; }
+#s1::before { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.40); z-index:1; }
+#s1 .hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+#s4 { background-image: var(--img-rss); background-size:cover; background-position:center; }
+#s4::before { content:''; position:absolute; inset:0; background:rgba(13,37,69,0.85); z-index:1; }
+#s5 { background-image: var(--img-club); background-size:cover; background-position:center; }
+#s5::before { content:''; position:absolute; inset:0; background:rgba(245,247,250,0.90); z-index:1; }
+#s11 { background-image: var(--img-closing); background-size:cover; background-position:center; }
+#s11::before { content:''; position:absolute; inset:0; background:rgba(237,241,247,0.88); z-index:1; }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+  .section { padding: 48px 28px; min-height: auto; }
+  .section::after { width: 3px; }
+  .headline { font-size: 32px; }
+  .subhead  { font-size: 14px; }
+  .eyebrow  { font-size: 9px; letter-spacing: 3px; }
+  .cover-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .cover-hl   { font-size: 44px; }
+  .cover-right { border-left: none; border-top: var(--border-gold); padding-left: 0; padding-top: 28px; flex-direction: row; gap: 32px; flex-wrap: wrap; }
+  .cover-year { font-size: 48px; }
+  .grid.g2, .grid.g3, .grid.g4 { grid-template-columns: 1fr; }
+  .fx-top { grid-template-columns: 1fr !important; }
+  .creds { grid-template-columns: 1fr !important; }
+  .stat-row { flex-direction: column; gap: 0; }
+  .stat { border-right: none; border-bottom: 0.5px solid rgba(255,255,255,0.08); }
+  .stat:last-child { border-bottom: none; }
+  .pillar-wrap { grid-template-columns: 1fr; }
+  .pillar-winter { flex-direction: column; gap: 6px; }
+  .pillar-winter span:last-child { font-size: 9px; }
+  .rev-grid { grid-template-columns: 1fr; }
+  .cred { flex-direction: column; gap: 6px; }
+  .cred-title { min-width: unset; }
+  .timeline { flex-direction: column; gap: 16px; }
+  .timeline::before { display: none; }
+  .tl-item { padding: 0; }
+  .tl-card { min-height: auto; padding: 16px; }
+  .ask-grid { grid-template-columns: 1fr; }
+  .closing-wrap { grid-template-columns: 1fr; gap: 36px; }
+  .nav-dots { right: 10px; gap: 8px; }
+  .nav-dot  { width: 5px; height: 5px; }
+  .corner { display: none; }
+  .quote { margin: 20px 0 28px; padding: 14px 18px; }
+  .quote p { font-size: 14px; }
+  .contents-grid { grid-template-columns: 1fr; }
+  #s4b .fx-top{ grid-template-columns:1fr; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section { padding: 52px 48px; }
+  .grid.g3 { grid-template-columns: repeat(2, 1fr); }
+  .grid.g4 { grid-template-columns: repeat(2, 1fr); }
+  .rev-grid { grid-template-columns: repeat(2, 1fr); }
+  .cover-hl { font-size: 52px; }
+  .pillar-wrap { grid-template-columns: 1fr; }
+  .contents-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width:768px){
+  /* collapse inline multi-column grids to single column */
+  [style*="grid-template-columns:repeat(2,1fr)"],
+  [style*="grid-template-columns:repeat(3,1fr)"],
+  [style*="grid-template-columns:1fr 1fr 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+  /* roadmap 4-up → 2-up (leave the $ axis alone) */
+  #s9 [style*="grid-template-columns:repeat(4,1fr)"]{ grid-template-columns:repeat(2,1fr) !important; }
+  /* economic table scrolls instead of clipping */
+  #s7b table{ display:block; width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  /* full-bleed image/video breaks: tighter padding, shorter height */
+  section[style*="align-items:flex-end"]{ padding:32px 22px !important; }
+  section[style*="95vh"], section[style*="85vh"], section[style*="75vh"], section[style*="70vh"]{ min-height:340px !important; }
+  /* navy ask panel + maritime panel: less padding on phones */
+  #s10 [style*="background:var(--bg-navy)"], #s5 [style*="background:var(--bg-navy)"]{ padding:24px !important; }
+}
+</style>
+</head>
+
+<div class="proposal" id="proposal">
+<nav class="nav-dots" id="navDots"></nav>
+
+<!-- ═══ S1 — COVER ═══ -->
+<section class="section s-white" id="s1">
+  <video class="hero-video" id="heroVideo" autoplay muted playsinline poster="hero-1.png">
+  <source src="soma-cats.mp4#t=2" type="video/mp4">
+</video>
+<script>
+  const heroVideo = document.getElementById('heroVideo');
+  heroVideo.addEventListener('loadedmetadata', () => { heroVideo.currentTime = 2; });
+  heroVideo.addEventListener('ended', () => { heroVideo.currentTime = 2; heroVideo.play(); });
+</script>
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="cover-wrap">
+      <div>
+        <div class="partner-tag">Strategic Partnership Proposal</div>
+        <div class="cover-hl">SOMABAY<span>YACHT CLUB</span></div>
+        <div class="divider" style="margin-top:20px"></div>
+        <div class="subhead" style="max-width:520px">Establishing the Red Sea's Premier Sailing Community — co-founded and operated by Red Sea Sails.</div>
+        <div style="margin-top:36px;display:flex;gap:32px">
+          <div>
+            <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px">Operator</div>
+            <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--text-primary)">Red Sea Sails</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:3px">Est. 2015 · 11 Years</div>
+          </div>
+          <div style="width:1px;background:var(--border-gold);opacity:1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<!-- ═══ S-CONTENTS — PROPOSAL OVERVIEW ═══ -->
+<section class="section s-light" id="s-contents">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow eyebrow-gold">Proposal Overview</div>
+    <div class="headline">What This <em>Proposal Covers</em></div>
+    <div class="divider"></div>
+    <div class="subhead" style="margin-bottom:8px">Eleven sections. A complete picture of the SOMABAY Yacht Club — what it is, who it attracts, the numbers, and how it works.</div>
+    <div class="contents-grid">
+
+      <a class="contents-item ci-gold" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">01</div>
+        <div>
+          <div class="contents-title">The Vision</div>
+          <div class="contents-desc">What the SOMABAY Yacht Club is and why it matters</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">02</div>
+        <div>
+          <div class="contents-title">The Opportunity</div>
+          <div class="contents-desc">Why now, why SOMABAY, and the global market</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item ci-gold" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">03</div>
+        <div>
+          <div class="contents-title">Red Sea Sails</div>
+          <div class="contents-desc">11 years of proven excellence — our credentials and role</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s4b').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">04</div>
+        <div>
+          <div class="contents-title">The FX Winter Program</div>
+          <div class="contents-desc">A committed European fleet pipeline — not a concept</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item ci-gold" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">05</div>
+        <div>
+          <div class="contents-title">The Club Model</div>
+          <div class="contents-desc">Four pillars, one umbrella — and the wider maritime world</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">06</div>
+        <div>
+          <div class="contents-title">Revenue & Clientele</div>
+          <div class="contents-desc">Who the club attracts and how it drives value</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item ci-gold" onclick="document.getElementById('s7b').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">07</div>
+        <div>
+          <div class="contents-title">The Winter Numbers</div>
+          <div class="contents-desc">The phased economic model, season by season</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s7c').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">08</div>
+        <div>
+          <div class="contents-title">The Global Network</div>
+          <div class="contents-desc">Sister clubs, regional circuits, and event exchange</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item ci-gold" onclick="document.getElementById('s9').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">09</div>
+        <div>
+          <div class="contents-title">2026 Roadmap</div>
+          <div class="contents-desc">A phased timeline from first event to full club launch</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s-beyond').scrollIntoView({behavior:'smooth'});return false;" href="#">
+        <div class="contents-num">10</div>
+        <div>
+          <div class="contents-title">Beyond the Horizon</div>
+          <div class="contents-desc">Where the partnership goes — the long view</div>
+        </div>
+        <span class="contents-arrow">→</span>
+      </a>
+
+      <a class="contents-item" onclick="document.getElementById('s10').scrollIntoView({behavior:'smooth'});return false;" href="#" style="background:var(--bg-navy);border-color:transparent;border-left:3px solid #c9a84c">
+        <div class="contents-num" style="color:#c9a84c;opacity:1">11</div>
+        <div>
+          <div class="contents-title" style="color:#fff;display:flex;align-items:center;gap:8px">The Partnership Ask <span style="font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:#07192e;background:#c9a84c;padding:2px 6px;border-radius:2px;font-weight:600">Start here</span></div>
+          <div class="contents-desc" style="color:rgba(255,255,255,0.6)">What we need from SOMABAY and next steps</div>
+        </div>
+        <span class="contents-arrow" style="color:#c9a84c">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S2 — THE VISION ═══ -->
+<section class="section s-white" id="s2">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 10 10 8 16 14 14 16 8"/></svg>
+    <div class="eyebrow eyebrow-gold">01 · The Vision</div>
+    <div class="headline">A New Era for the <em>Red Sea</em></div>
+    <div class="divider"></div>
+    <div class="quote">
+      <p>The SOMABAY Yacht Club is the Red Sea's defining sailing address — a permanent, exclusive community co-founded and operated by Red Sea Sails, bringing together world-class events, luxury charters, professional education, and premium marina services under one prestigious roof.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card"><div class="card-num">01</div><div class="card-title">The Club</div><div class="card-body">A members-only sailing institution at SOMABAY — a prestigious Red Sea address with a curated community of Egyptian and international yacht owners, sailors, and luxury guests.</div></div>
+      <div class="card card-gold"><div class="card-num">02</div><div class="card-title">The Platform</div><div class="card-body">Every activity — events, charters, school, berth management, and the winter program — operates as a revenue-generating pillar beneath the Yacht Club umbrella.</div></div>
+      <div class="card"><div class="card-num">03</div><div class="card-title">The Legacy</div><div class="card-body">A landmark that elevates SOMABAY's brand, drives real estate value, and positions the Red Sea as a world-class international yachting destination.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VIDEO BREAK — SAILING FESTIVAL FOOTAGE (between 02 and 03) ═══ -->
+<section class="section s-light" id="s2b">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow">From the Water at SOMABAY</div>
+    <div class="headline">Before the Proposal, <em>There Was the Festival.</em></div>
+    <div class="divider"></div>
+    <div class="grid g2" style="margin-top:8px">
+
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:56.25% 0 0 0;position:relative;background:#000">
+          <iframe loading="lazy" src="https://player.vimeo.com/video/1204962739?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            title="SOMABAY Sailing Festival"></iframe>
+        </div>
+        <div style="padding:14px 18px;font-size:11px;letter-spacing:1px;color:var(--steel-dim);text-transform:uppercase">SOMABAY Sailing Festival · May 2026</div>
+      </div>
+
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:56.25% 0 0 0;position:relative;background:#000">
+          <iframe loading="lazy" src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4040759756057537%2F&show_text=false&width=560&t=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            title="Red Sea Sails Fleet"></iframe>
+        </div>
+        <div style="padding:14px 18px;font-size:11px;letter-spacing:1px;color:var(--steel-dim);text-transform:uppercase">Red Sea Sails · On Location at SOMABAY</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S3 — THE OPPORTUNITY (merged: Why Now + Med Window) ═══ -->
+<!-- IMAGE BREAK — DESTINATION AERIAL -->  <!-- SWAP: src below -> your Soma Bay marina / aerial photo -->
+<section style="height:75vh;min-height:380px;background-image:url('drone-1.jpg');background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.78) 0%,transparent 58%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The Peninsula</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,38px);font-weight:700;color:#fff;line-height:1.15">11km of Red Sea coastline.<br><em style="color:#c9a84c">Sea on every side, built to sail.</em></div>
+  </div>
+</section>
+
+<!-- ═══ HOMEGROWN — EGYPT'S OWN ═══ -->
+<section class="section s-light" id="s-homegrown">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow eyebrow-gold">Community-Driven</div>
+    <div class="headline">Rooted in <em>Egypt's Sailing Community.</em></div>
+    <div class="divider"></div>
+    <div class="subhead" style="max-width:760px;margin-bottom:36px">What began as luxury charters and sailing experiences has, since 2020, grown into something deeper — a genuine effort to support and build Egypt's sailing community. Everything we do is community-driven: our regattas, festivals, and programs are built around the sailors, boat owners, and federation youth who bring these waters to life. The SOMABAY Yacht Club is a natural next step in supporting that community's growth.</div>
+    <div class="creds homegrown-creds" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="cred">
+        <div class="cred-title">A Growing Community</div>
+        <div class="cred-body">Egyptian sailors, boat owners, and federation youth — a community we're proud to support and help grow.</div>
+      </div>
+      <div class="cred">
+        <div class="cred-title">Community at the Core</div>
+        <div class="cred-body">Since 2020, every regatta and festival has been built around the people who sail these waters.</div>
+      </div>
+      <div class="cred">
+        <div class="cred-title">SOMABAY as Home</div>
+        <div class="cred-body">The Yacht Club offers this community a permanent home on the Red Sea.</div>
+      </div>
+    </div>
+    <div style="margin-top:32px;height:3px;width:120px;background:linear-gradient(to right,#ce1126 0 33%,#ffffff 33% 66%,#000000 66% 100%)"></div>
+  </div>
+</section>
+
+<section class="section s-light" id="s3">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+    <div class="eyebrow">02 · The Opportunity</div>
+    <div class="headline">Why SOMABAY. <em>Why Now.</em></div>
+    <div class="divider"></div>
+    <div class="grid g2" style="margin-bottom:40px">
+      <div class="card card-gold"><div class="card-num">01</div><div class="card-title">Marina Opening Moment</div><div class="card-body">SOMABAY's new marina is the perfect launchpad. Establishing the Yacht Club at opening sets the tone from day one — not as an afterthought, but as its defining feature and identity.</div></div>
+      <div class="card"><div class="card-num">02</div><div class="card-title">An Uncontested Space</div><div class="card-body">There is no established, premium yacht club on the Egyptian Red Sea coast. The SOMABAY Yacht Club would be the first of its kind — a true first-mover position in a high-value market.</div></div>
+      <div class="card"><div class="card-num">03</div><div class="card-title">SOMABAY's Natural Positioning</div><div class="card-body">As Egypt's most distinguished luxury resort community, SOMABAY already attracts the exact clientele a yacht club commands. The infrastructure and the audience are both in place.</div></div>
+      <div class="card card-gold"><div class="card-num">04</div><div class="card-title">The Mediterranean Window</div><div class="card-body">The Red Sea season runs October through April — precisely when Europe closes. Every winter, thousands of luxury yachts and charter fleets seek a destination. SOMABAY becomes their answer.</div></div>
+    </div>
+    <!-- Med market stat bar -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:var(--border-navy);margin-top:8px">
+      <div style="padding:20px 24px;border-right:var(--border-navy);position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">35,000+</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">Sailing Yachts in the Med</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">Greece, Croatia, and Turkey alone — all looking for a winter home each October.</div>
+      </div>
+      <div style="padding:20px 24px;border-right:var(--border-navy);position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--teal);line-height:1;margin-bottom:6px">Oct–Apr</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">The Red Sea Season</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">Year-round temperate conditions — no comparable winter sailing destination at this standard.</div>
+      </div>
+      <div style="padding:20px 24px;position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">First</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">Mover Advantage</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">No established yacht club exists on the Egyptian Red Sea. SOMABAY claims that position now or cedes it to someone else.</div>
+      </div>
+    </div>
+    <!-- ░░ MERGED FROM GOUNA · 05 The Market — sourced industry figures ░░ -->
+    <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin:40px 0 16px">The Global Industry — Why the Fleet Moves</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:var(--border-navy)">
+      <div style="padding:20px 24px;border-right:var(--border-navy);position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">$8.35B</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">Global Yacht Charter Market · 2024</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">Growing at 5.2% CAGR to 2030. Europe holds 44% of global revenue.</div>
+      </div>
+      <div style="padding:20px 24px;border-right:var(--border-navy);position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--teal);line-height:1;margin-bottom:6px">96%</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">Med Summer Concentration</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">Bookings concentrate Jul–Aug. The fleet has nowhere to go Oct–Apr.</div>
+      </div>
+      <div style="padding:20px 24px;position:relative">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)"></div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">22%</div>
+        <div style="font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase">Rise in Asian Clientele · 2024</div>
+        <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.6;margin-top:8px">New HNW audiences seeking destinations beyond established Med routes.</div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:14px;font-style:italic;line-height:1.6">Sources: Grand View Research · Mordor Intelligence · 360 Research Reports · 2024–2025. In 2025, Egypt opened its waters to foreign-flagged leisure yachts for the first time — described across the industry as a transformative moment. The door is open; the question is who walks through it first.</p>
+    <!-- ░░ SEASONALITY CHART — Med vs Red Sea ░░ -->
+    <div style="margin-top:48px">
+      <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:18px">Sailing Season — Mediterranean vs Red Sea</div>
+      <div style="display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;margin-bottom:8px">
+        <div></div>
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:4px;font-size:10px;color:var(--text-muted);text-align:center;letter-spacing:0.5px">
+          <div>J</div><div>F</div><div>M</div><div>A</div><div>M</div><div>J</div><div>J</div><div>A</div><div>S</div><div>O</div><div>N</div><div>D</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;margin-bottom:6px">
+        <div style="font-size:12px;font-weight:600;color:var(--text-secondary)">Mediterranean</div>
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:4px">
+          <div style="height:30px;border-radius:3px;background:rgba(13,37,69,0.05)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(13,37,69,0.05)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(61,90,114,0.35)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(61,90,114,0.35)"></div>
+          <div style="height:30px;border-radius:3px;background:#3d5a72"></div>
+          <div style="height:30px;border-radius:3px;background:#3d5a72"></div>
+          <div style="height:30px;border-radius:3px;background:#3d5a72"></div>
+          <div style="height:30px;border-radius:3px;background:#3d5a72"></div>
+          <div style="height:30px;border-radius:3px;background:#3d5a72"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(61,90,114,0.35)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(13,37,69,0.05)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(13,37,69,0.05)"></div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center">
+        <div style="font-size:12px;font-weight:600;color:var(--teal)">Red Sea</div>
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:4px">
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:rgba(28,114,147,0.42)"></div>
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+          <div style="height:30px;border-radius:3px;background:var(--teal)"></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;margin-top:16px;font-size:10px;color:var(--text-muted);letter-spacing:0.5px">
+        <span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:2px;background:var(--teal);display:inline-block"></span>Peak season</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:2px;background:rgba(28,114,147,0.42);display:inline-block"></span>Open / shoulder</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:2px;background:rgba(13,37,69,0.05);display:inline-block"></span>Closed</span>
+      </div>
+      <p style="font-size:11px;color:var(--text-muted);margin-top:14px;font-style:italic">The Red Sea peaks precisely when the Mediterranean closes. Red Sea conditions: 20–25°C winter air, 22–30°C year-round water. Sources: FX Yachting · NAU Yachts · Frontier Yachting · 2025–2026.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ═══ S4 — RED SEA SAILS + RSS ROLE (merged) ═══ -->
+<section class="section s-navy" id="s4">
+  <div class="corner corner-white">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v15"/><path d="M12 3c4 3.5 6 9 6 15H12z"/><path d="M5 18h14"/></svg>
+    <div class="eyebrow eyebrow-gold">03 · The Operator</div>
+    <div class="headline headline-white">Red Sea Sails — <em>11 Years of Proven Excellence</em></div>
+    <div class="divider"></div>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num">11</div><div class="stat-label">Years of Operations</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Major Events 2022–2025</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Strategic Partners</div></div>
+      <div class="stat"><div class="stat-num">HNW</div><div class="stat-label">Network Access</div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <div>
+        <div class="quote quote-dark" style="margin-top:0">
+          <p>RSS brings what cannot be built overnight — eleven years of relationships, reputation, and operational infrastructure in Egypt's sailing world. The SOMABAY Yacht Club launches with instant credibility.</p>
+        </div>
+        <div style="padding:20px 24px;border:0.5px solid rgba(201,168,76,0.25);margin-top:4px">
+          <p style="font-family:var(--font-display);font-size:15px;font-style:italic;color:rgba(255,255,255,0.5);line-height:1.7">SOMABAY provides the stage.<br>RSS brings the performance.</p>
+        </div>
+      </div>
+      <div class="creds">
+        <div class="cred cred-gold" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08)">
+          <div class="cred-title" style="color:#fff">Operational Track Record</div>
+          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Organizer of the Red Sea Sailing Regatta, El Gouna Sailing Festival, and ETA Cup Series — Egypt's most prestigious sailing events — 23 regattas delivered on the Red Sea since 2022.</div>
+        </div>
+        <div class="cred" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.07)">
+          <div class="cred-title" style="color:#fff">Club Operations & Event Production</div>
+          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Day-to-day Yacht Club management, member services, sailing programming, and full execution of regattas, festivals, and racing series under the club's annual calendar.</div>
+        </div>
+        <div class="cred cred-gold" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08)">
+          <div class="cred-title" style="color:#fff">Charter, School & Berth Management</div>
+          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Fleet operations, booking, crew management, sailing school curriculum, and specialist management of the sailing yacht section of the marina.</div>
+        </div>
+        <div class="cred" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.07)">
+          <div class="cred-title" style="color:#fff">Elite Network & Strategic Partners</div>
+          <div class="cred-body" style="color:rgba(255,255,255,0.6)">Direct relationships with Egyptian and international HNW yacht owners. Felix Maritime (since 1983) and FX Yachting (Greece) — together an unmatched pipeline of international vessels, clients, and brokers. Leadership backed by founders from Egypt's finance sector.</div>
+        </div>
+      </div>
+      <!-- Media proof — SOMABAY Sailing Festival, May 2026 -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:0.5px solid rgba(255,255,255,0.14)">
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--gold);line-height:1">490K</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Organic Views · May 2026</div></div>
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;line-height:1">181K</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Accounts Reached</div></div>
+        <div style="padding:16px 20px;border-right:0.5px solid rgba(255,255,255,0.1)"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;line-height:1">23</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Boats · SOMABAY Festival</div></div>
+        <div style="padding:16px 20px"><div style="font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--gold);line-height:1">100%</div><div style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px">Organic · Zero Paid Media</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S4B — FX WINTER PROGRAM ═══ -->
+<section class="section s-white" id="s4b">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="6.2" y1="6.2" x2="17.8" y2="17.8"/><line x1="17.8" y1="6.2" x2="6.2" y2="17.8"/></svg>
+    <div class="eyebrow eyebrow-gold">04 · Strategic Partnership · FX Yachting × Red Sea Sails</div>
+    <div class="headline">The Winter Yacht Program — <em>Pipeline, Not Concept</em></div>
+    <div class="divider"></div>
+
+    <div class="fx-top" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-bottom:40px">
+      <div>
+        <div class="subhead" style="margin-bottom:28px">FX Yachting is Greece's leading luxury catamaran charter operator — two decades of delivering world-class sailing experiences to Europe's most discerning clients. Their CEO Barbara Gabriel brings direct access to a high-net-worth European sailing community actively seeking a Red Sea home base. The partnership is committed. The fleet is ready.</div>
+        <div class="quote" style="margin-top:0">
+          <p>When FX Yachting brings its fleet to SOMABAY, it sends a signal heard across the European sailing world: the Red Sea has arrived as a serious destination.</p>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:20px;align-items:center">
+          <img loading="lazy" src="fx-logo.png" alt="FX Yachting" style="height:120px;opacity:0.85" />
+          <img loading="lazy" src="felix-logo.png" alt="Felix Maritime" style="height:90px;opacity:0.85" />
+        </div>
+      </div>
+      <div>
+        <img loading="lazy" src="fx-fleet-1.png" alt="FX Yachting catamaran" style="width:100%;height:auto;border-radius:4px;opacity:0.95" />
+      </div>
+    </div>
+
+    <div class="creds" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div class="cred cred-gold">
+        <svg style="display:block;margin-bottom:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><path d="M12 2L4 20h16L12 2z"/><line x1="12" y1="2" x2="12" y2="20"/><line x1="4" y1="20" x2="20" y2="20"/></svg>
+        <div class="cred-title">The Fleet</div>
+        <div class="cred-body">Luxury sailing catamarans and motor yachts from 45 to 80 feet — the finest vessels from the Greek charter market, repositioned to SOMABAY for the Red Sea winter season each October through April.</div>
+      </div>
+      <div class="cred">
+        <svg style="display:block;margin-bottom:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <div class="cred-title">The Aloia 80 — Flagship Vessel</div>
+        <div class="cred-body">An 80ft luxury catamaran with confirmed interest in permanent Red Sea docking at SOMABAY. A tangible, named asset that signals to the broader European market that SOMABAY is open for business.</div>
+      </div>
+      <div class="cred cred-gold">
+        <svg style="display:block;margin-bottom:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="cred-title">The Network Effect</div>
+        <div class="cred-body">FX's client base represents hundreds of high-net-worth European sailors and yacht owners. Their presence at SOMABAY attracts additional vessels, charter guests, and long-term berth holders.</div>
+      </div>
+      <div class="cred">
+        <svg style="display:block;margin-bottom:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <div class="cred-title">Revenue Across Every Pillar</div>
+        <div class="cred-body">Marina berth fees. Hotel bookings. Restaurant and outlet spend. Charter commissions. Premium provisioning. The FX winter fleet activates revenue across the entire SOMABAY operation — not just the marina.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK — REGATTA -->
+<section style="height:85vh;min-height:400px;position:relative;display:flex;align-items:flex-end;padding:48px 72px;overflow:hidden;background:#07192e;">
+  <video id="eventVid" autoplay muted loop playsinline preload="metadata" poster="marina-yachts.png" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;">
+    <source src="soma-regatta.mp4" type="video/mp4">
+    <img loading="lazy" src="marina-yachts.png" alt="Red Sea Sails regatta" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+  </video>
+  <button onclick="var v=document.getElementById('eventVid');v.muted=!v.muted;this.querySelector('.ic-off').style.display=v.muted?'block':'none';this.querySelector('.ic-on').style.display=v.muted?'none':'block';this.setAttribute('aria-label',v.muted?'Unmute video':'Mute video');" aria-label="Unmute video" style="position:absolute;top:24px;right:24px;z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.5);background:rgba(7,25,46,0.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;padding:0">
+    <svg class="ic-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M11 5 6 9H2v6h4l5 4z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+    <svg class="ic-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg>
+  </button>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.75) 0%,transparent 60%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">Red Sea Sails · Event Track Record</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">This is what we bring<br><em style="color:#c9a84c">to SOMABAY's waters.</em></div>
+  </div>
+</section>
+
+<!-- ═══ S5 — CLUB MODEL + MARITIME WORLD (merged) ═══ -->
+<section class="section s-light" id="s5">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/></svg>
+    <div class="eyebrow">05 · The Club Model</div>
+    <div class="headline">One Club. <em>Every Maritime Guest.</em></div>
+    <div class="divider"></div>
+    <div class="subhead">Sailing at its core — prestigious enough to welcome the wider maritime world.</div>
+    <div class="pillar-wrap">
+      <div class="pillar-crown">
+        <div class="pillar-crown-title">SOMABAY YACHT CLUB</div>
+        <div class="pillar-crown-sub">The Umbrella · The Brand · The Community</div>
+      </div>
+      <div class="pillar-item">
+        <svg class="s-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><path d="M12 2L4 20h16L12 2z"/><line x1="12" y1="2" x2="12" y2="20"/><line x1="4" y1="20" x2="20" y2="20"/></svg>
+        <div class="pillar-tag">Pillar 01</div>
+        <div class="pillar-name">Events & Regattas</div>
+        <div class="pillar-desc">Annual regattas, sailing festivals, and racing series. Media-generating, sponsor-attracting events that put SOMABAY on the international sailing map and drive hotel occupancy.</div>
+      </div>
+      <div class="pillar-item">
+        <svg class="s-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V10l7-7 7 7v10"/><path d="M9 20v-6h6v6"/></svg>
+        <div class="pillar-tag">Pillar 02</div>
+        <div class="pillar-name">Luxury Charter Operations</div>
+        <div class="pillar-desc">Premium fleet of 40–60ft monohulls and catamarans. Full-day and multi-day charters for resort guests, residents, and international visitors seeking Red Sea experiences.</div>
+      </div>
+      <div class="pillar-item">
+        <svg class="s-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><circle cx="12" cy="7" r="3"/><path d="M6.5 20h11l-1-5a5 5 0 0 0-9 0l-1 5z"/><path d="M9 12l1 3 2-2 2 2 1-3"/></svg>
+        <div class="pillar-tag">Pillar 03</div>
+        <div class="pillar-name">Sailing School</div>
+        <div class="pillar-desc">Professional sailing education for all ages — hotel guests, residents, school groups, and competitive sailors. Builds a long-term community of sailors anchored at SOMABAY.</div>
+      </div>
+      <div class="pillar-item">
+        <svg class="s-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><line x1="3" y1="20" x2="21" y2="20"/><line x1="3" y1="16" x2="21" y2="16"/><path d="M5 16v-4l4-2 4 2 4-2 4 2v4"/><path d="M12 6v6"/><circle cx="12" cy="4" r="2"/></svg>
+        <div class="pillar-tag">Pillar 04</div>
+        <div class="pillar-name">Sailing Yacht Berth Management</div>
+        <div class="pillar-desc">RSS manages the sailing yacht section of the marina — berths, crew support, provisioning, and concierge services dedicated to sailing vessels. Broader marina operations remain with SOMABAY.</div>
+      </div>
+      <div class="pillar-winter">
+        <span><strong>+ FX–RSS Winter Yacht Program</strong> &nbsp;·&nbsp; October through April &nbsp;·&nbsp; Red Sea Season</span>
+        <span style="font-size:10px;letter-spacing:2px;opacity:0.8">EUROPEAN FLEET · HNW CHARTER GUESTS</span>
+      </div>
+    </div>
+    <!-- Maritime world extension -->
+    <div style="margin-top:40px;padding:28px 32px;background:var(--bg-navy);position:relative">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)"></div>
+      <div style="font-size:9px;letter-spacing:3px;color:rgba(201,168,76,0.7);text-transform:uppercase;margin-bottom:12px">Beyond Sailing</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+        <div>
+          <div style="font-family:var(--font-display);font-size:14px;font-weight:700;color:#fff;margin-bottom:8px">Motoryacht & Charter Guests</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.7">The Yacht Club's prestige naturally welcomes motoryacht owners and luxury charter guests. A prestigious club address is a destination signal the global maritime community recognises.</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--gold);margin-bottom:8px">Superyacht Guests Ashore</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.7">When a superyacht calls at SOMABAY, the Yacht Club hosts owners and guests ashore — the social calendar, the dining, the events, the address. We speak their language and match their standard.</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:14px;font-weight:700;color:#fff;margin-bottom:8px">Felix Maritime — Technical Backbone</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.7">The Yacht Club hosts. Felix Maritime (since 1983) services the vessel. Together, SOMABAY can receive and retain the most demanding maritime guests with complete confidence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL BLEED IMAGE BREAK -->
+<section style="height:70vh;min-height:400px;background-image:url('luxury-1.jpg');background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.7) 0%,transparent 60%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The Red Sea Experience</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">Life aboard the Red Sea.<br><em style="color:#c9a84c">This is what we're building.</em></div>
+  </div>
+</section>
+
+<!-- ═══ S7 — REVENUE + CLIENTELE (merged) ═══ -->
+<section class="section s-lighter" id="s7">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg>
+    <div class="eyebrow">06 · Revenue & Clientele</div>
+    <div class="headline">Who It Attracts. <em>What It Generates.</em></div>
+    <div class="divider"></div>
+    <!-- Clientele row -->
+    <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:16px">The Clientele</div>
+    <div class="grid g3" style="margin-bottom:40px">
+      <div class="card"><div class="card-title">Egyptian HNW Yacht Owners</div><div class="card-body">A growing class of high-net-worth individuals seeking a prestigious Red Sea home for their vessels. The Yacht Club gives them a community, a berth, and an identity — none of which currently exist on this coast.</div></div>
+      <div class="card card-gold"><div class="card-title">International Sailing Community</div><div class="card-body">European and global yacht owners seeking a winter destination. Through FX Yachting's network and RSS's international relationships, the club has an immediate pipeline of international vessels and owners.</div></div>
+      <div class="card"><div class="card-title">Resort Guests & Property Investors</div><div class="card-body">SOMABAY guests seeking bespoke on-water experiences, and investors drawn by the proven global link between yacht club addresses and premium real estate values.</div></div>
+    </div>
+   <!-- Revenue grid -->
+    <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:16px">Revenue Streams</div>
+    <div style="margin-bottom:24px;padding:20px 24px;background:var(--bg-secondary);border-left:3px solid var(--gold)">
+      <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px">Reading These Figures</div>
+      <p style="font-size:12.5px;color:var(--text-secondary);line-height:1.75">The figures below are <strong style="color:var(--text-primary)">steady-state estimates</strong> — what each pillar contributes annually once the club is established and the Winter Yacht Program has scaled to full capacity (50–70 wintering yachts), consistent with the economic model that follows. Year one is a fraction of these numbers; each stream ramps over three to four seasons as the fleet grows, membership matures, and the events calendar fills. We're showing the destination at maturity — conservatively — not the opening season.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card rc-gold"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><line x1="3" y1="20" x2="21" y2="20"/><line x1="3" y1="16" x2="21" y2="16"/><path d="M5 16v-4l4-2 4 2 4-2 4 2v4"/></svg><div class="rev-label">Marina Berth Fees</div><div class="rev-body">Annual and seasonal berth revenue from permanent yacht owners and transient vessels — consistent, recurring income independent of hotel occupancy cycles. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$120–300K</span></div></div></div>
+      <div class="rev-card rc-teal"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><div class="rev-label">Hotel & F&B Spend</div><div class="rev-body">Yacht owners, crew, and charter guests are among the highest-spending hospitality guests. Their marina presence directly drives hotel bookings, restaurant covers, and outlet revenue. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$250–700K</span></div></div></div>
+      <div class="rev-card rc-gold"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><path d="M12 2L4 20h16L12 2z"/><line x1="12" y1="2" x2="12" y2="20"/></svg><div class="rev-label">Club Membership</div><div class="rev-body">Annual membership subscriptions from the Yacht Club community. Tiered membership creates a prestige hierarchy while generating a reliable and recurring income stream. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$150–250K</span></div></div></div>
+      <div class="rev-card rc-teal"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><path d="M3 17l4-8 4 4 3-6 4 10"/><line x1="3" y1="20" x2="21" y2="20"/></svg><div class="rev-label">Charter Revenue</div><div class="rev-body">Day and multi-day charters generate direct revenue through agreed commercial arrangements and referral structures between RSS and SOMABAY. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$200–500K</span></div></div></div>
+      <div class="rev-card rc-gold"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><div class="rev-label">Events & Sponsorship</div><div class="rev-body">Regattas and sailing festivals attract national and international brand sponsors. SOMABAY's name reaches sailing audiences across Egypt, Europe, and the Gulf. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">At maturity · annual</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">$300–500K</span></div></div></div>
+      <div class="rev-card rc-teal"><svg class="s-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/><circle cx="12" cy="16" r="1" fill="var(--teal)"/></svg><div class="rev-label">Real Estate Value</div><div class="rev-body">Yacht clubs are proven real estate value drivers worldwide. The SOMABAY Yacht Club positions the development as a sailing lifestyle community — supporting premium property pricing. <div style="margin-top:16px;padding-top:12px;border-top:0.5px solid var(--border-navy);display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">Pricing premium</span><span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold)">+5–15%</span></div></div></div>
+    </div>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:20px;font-style:italic;line-height:1.6">At-maturity annual estimates for core Club operations at steady state. The Winter Yacht Program is additional to these figures — its phased economics follow in Section 07, reaching $1.05–2.85M annually at full scale. Year one is a fraction of these figures; the ramp follows fleet growth and marina capacity over three to four seasons. Conservative low–high ranges.</p>
+  </div>
+</section>
+
+
+<!-- ═══ S7B — WINTER YACHT PROGRAM · THE NUMBERS (merged from gouna · 06 The Winter Series) ═══ -->
+<section class="section s-navy" id="s7b">
+  <div class="corner corner-white">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+    <div class="eyebrow eyebrow-gold">07 · The Winter Yacht Program · The Numbers</div>
+    <div class="headline headline-white">When the Med closes, <em>SOMABAY opens.</em></div>
+    <div class="divider"></div>
+    <div class="subhead" style="color:rgba(255,255,255,0.7)">Every October, thousands of Mediterranean yachts look for a warm-water winter home. The Caribbean takes most. The Red Sea is the natural alternative — closer, more interesting, and now open to foreign-flagged vessels. A phased programme: conservative in year one, scaling as infrastructure and reputation grow together. SOMABAY serves as the fleet’s winter home port — yachts sail out for regattas along the coast and return to base, keeping the berths, the crews, and the spend at SOMABAY.</div>
+
+    <!-- structural stats -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:0.5px solid rgba(255,255,255,0.12);margin:32px 0 40px">
+      <div style="padding:20px 24px;border-right:0.5px solid rgba(255,255,255,0.12)">
+  <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">~15,000</div>
+  <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">Charter Vessels in Europe</div>
+  <div style="font-size:11.5px;color:rgba(255,255,255,0.55);line-height:1.6;margin-top:8px">Greece alone runs 5,600+ charter boats — the closest major fleet to the Red Sea. Croatia adds 4,378 more. 70%+ of the global fleet sits in the Med at peak, idle from October.</div>
+</div>
+      <div style="padding:20px 24px;border-right:0.5px solid rgba(255,255,255,0.12)">
+        <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--teal);line-height:1;margin-bottom:6px">Oct–Apr</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">The Med Pause</div>
+        <div style="font-size:11.5px;color:rgba(255,255,255,0.55);line-height:1.6;margin-top:8px">96% of Med bookings fall in summer. The fleet needs a winter home.</div>
+      </div>
+      <div style="padding:20px 24px">
+        <div style="font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px">&lt;1%</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase">Capture at Full Scale</div>
+        <div style="font-size:11.5px;color:rgba(255,255,255,0.55);line-height:1.6;margin-top:8px">Even the full programme needs under 1% of the European fleet.</div>
+      </div>
+    </div>
+
+    <!-- phased tiers -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:44px">
+      <div style="padding:24px;border:0.5px solid rgba(255,255,255,0.12);border-top:3px solid var(--teal)">
+        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:12px">Phase One · 2026–2027</div>
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:700;color:#fff;line-height:1">10–15</div>
+        <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px">Yachts</div>
+        <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gold);margin-bottom:8px">Proof of Concept</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6">First international yachts wintering at SOMABAY. FX Yachting pipeline as primary source. Curated, not broadcast.</div>
+        <div style="margin-top:16px;border-top:0.5px solid rgba(255,255,255,0.12);padding-top:14px;font-size:12px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Berth Revenue</span><span style="color:#fff">~$50–135K</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Crew &amp; Owner Spend</span><span style="color:#fff">~$125–375K</span></div>
+          <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.55)"><span>Season</span><span style="color:#fff">Nov–Apr · 5 mo (arrivals from late Oct)</span></div>
+        </div>
+      </div>
+      <div style="padding:24px;border:0.5px solid rgba(255,255,255,0.12);border-top:3px solid var(--gold)">
+        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:12px">Phase Two · 2027–2028</div>
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:700;color:#fff;line-height:1">20–30</div>
+        <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px">Yachts</div>
+        <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gold);margin-bottom:8px">Growing the Programme</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6">Word of mouth from phase one. Wider FX network. RSS international outreach. First European sailing press visit.</div>
+        <div style="margin-top:16px;border-top:0.5px solid rgba(255,255,255,0.12);padding-top:14px;font-size:12px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Berth Revenue</span><span style="color:#fff">~$120–325K</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Crew &amp; Owner Spend</span><span style="color:#fff">~$300–900K</span></div>
+          <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.55)"><span>Season</span><span style="color:#fff">Oct–Apr · 6 mo</span></div>
+        </div>
+      </div>
+      <div style="padding:24px;border:0.5px solid rgba(255,255,255,0.12);border-top:3px solid var(--teal)">
+        <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:12px">Phase Three · 2029 +</div>
+        <div style="font-family:var(--font-display);font-size:38px;font-weight:700;color:#fff;line-height:1">50–70</div>
+        <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px">Yachts</div>
+        <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gold);margin-bottom:8px">Full Scale</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6">Full marina capacity enables the complete vision. SOMABAY established on international sailing itineraries.</div>
+        <div style="margin-top:16px;border-top:0.5px solid rgba(255,255,255,0.12);padding-top:14px;font-size:12px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Berth Revenue</span><span style="color:#fff">~$300–755K</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;color:rgba(255,255,255,0.55)"><span>Crew &amp; Owner Spend</span><span style="color:#fff">~$750K–2.1M</span></div>
+          <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.55)"><span>Season</span><span style="color:#fff">Oct–Apr · 6 mo</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- totals table -->
+    <!-- ░░ ECONOMIC CONTRIBUTION RANGE CHART ░░ -->
+    <div style="font-size:9px;letter-spacing:3px;color:rgba(201,168,76,0.7);text-transform:uppercase;margin-bottom:6px">Total Economic Contribution — Per Winter Season</div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.55);max-width:560px;margin-bottom:24px">Direct contribution to SOMABAY each season — bars span the low-to-high scenario range.</p>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-bottom:14px">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <span style="font-size:12px;color:rgba(255,255,255,0.7)">Phase 1 · 2026–27 · 10–15 yachts</span>
+          <span style="font-family:var(--font-display);font-size:14px;font-weight:700;color:#fff">~$175–510K</span>
+        </div>
+        <div style="position:relative;height:14px;background:rgba(255,255,255,0.06);border-radius:7px">
+          <div style="position:absolute;left:5.8%;width:11.2%;top:0;bottom:0;border-radius:7px;background:linear-gradient(90deg,var(--teal),#3a9bc1)"></div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <span style="font-size:12px;color:rgba(255,255,255,0.7)">Phase 2 · 2027–28 · 20–30 yachts</span>
+          <span style="font-family:var(--font-display);font-size:14px;font-weight:700;color:#fff">~$420K–1.2M</span>
+        </div>
+        <div style="position:relative;height:14px;background:rgba(255,255,255,0.06);border-radius:7px">
+          <div style="position:absolute;left:14%;width:26%;top:0;bottom:0;border-radius:7px;background:linear-gradient(90deg,var(--teal),#3a9bc1)"></div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <span style="font-size:12px;color:rgba(255,255,255,0.7)">Phase 3 · 2029 + · 50–70 yachts</span>
+          <span style="font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--gold)">~$1.05–2.85M</span>
+        </div>
+        <div style="position:relative;height:14px;background:rgba(255,255,255,0.06);border-radius:7px">
+          <div style="position:absolute;left:35%;width:60%;top:0;bottom:0;border-radius:7px;background:linear-gradient(90deg,#3a9bc1,var(--gold-light))"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);font-size:10px;color:rgba(255,255,255,0.35);border-top:0.5px solid rgba(255,255,255,0.12);padding-top:6px;margin-bottom:40px">
+      <span>$0</span><span style="text-align:center">$1M</span><span style="text-align:center">$2M</span><span style="text-align:right">$3M</span>
+    </div>
+    <div style="font-size:9px;letter-spacing:3px;color:rgba(201,168,76,0.7);text-transform:uppercase;margin-bottom:12px">The Numbers — Season by Season</div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.55);max-width:560px;margin-bottom:16px">Estimated direct economic contribution to SOMABAY per winter season. Ranges reflect low and high scenarios.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:rgba(255,255,255,0.75)">
+      <thead>
+        <tr style="border-bottom:0.5px solid rgba(255,255,255,0.2)">
+          <th style="text-align:left;padding:10px 8px;font-weight:500;color:rgba(255,255,255,0.5);font-size:11px"></th>
+          <th style="text-align:right;padding:10px 8px;font-weight:600;color:#fff">Phase 1 · 2026–27</th>
+          <th style="text-align:right;padding:10px 8px;font-weight:600;color:#fff">Phase 2 · 2027–28</th>
+          <th style="text-align:right;padding:10px 8px;font-weight:600;color:#fff">Phase 3 · 2029 +</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:0.5px solid rgba(255,255,255,0.08)"><td style="padding:10px 8px;font-weight:600;color:#fff">Wintering yachts</td><td style="text-align:right;padding:10px 8px">10–15</td><td style="text-align:right;padding:10px 8px">20–30</td><td style="text-align:right;padding:10px 8px">50–70</td></tr>
+        <tr style="border-bottom:0.5px solid rgba(255,255,255,0.08)"><td style="padding:10px 8px;font-weight:600;color:#fff">Season length</td><td style="text-align:right;padding:10px 8px">5 months</td><td style="text-align:right;padding:10px 8px">6 months</td><td style="text-align:right;padding:10px 8px">6 months</td></tr>
+        <tr style="border-bottom:0.5px solid rgba(255,255,255,0.08)"><td style="padding:10px 8px;font-weight:600;color:#fff">Berth revenue</td><td style="text-align:right;padding:10px 8px">~$50–135K</td><td style="text-align:right;padding:10px 8px">~$120–325K</td><td style="text-align:right;padding:10px 8px">~$300–755K</td></tr>
+        <tr style="border-bottom:0.5px solid rgba(255,255,255,0.08)"><td style="padding:10px 8px;font-weight:600;color:#fff">Crew &amp; owner spend</td><td style="text-align:right;padding:10px 8px">~$125–375K</td><td style="text-align:right;padding:10px 8px">~$300–900K</td><td style="text-align:right;padding:10px 8px">~$750K–2.1M</td></tr>
+        <tr style="border-top:0.5px solid var(--gold)"><td style="padding:12px 8px;font-weight:700;color:var(--gold)">Total per season</td><td style="text-align:right;padding:12px 8px;font-weight:700;color:var(--gold)">~$175–510K</td><td style="text-align:right;padding:12px 8px;font-weight:700;color:var(--gold)">~$420K–1.2M</td><td style="text-align:right;padding:12px 8px;font-weight:700;color:var(--gold)">~$1.05–2.85M</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:14px;font-style:italic;line-height:1.6"><strong style="color:rgba(255,255,255,0.6)">Assumptions:</strong> berth fee $1,000–1,800/yacht/month · blended crew &amp; owner spend ashore $2,500–5,000/yacht/month. Full-scale phase contingent on marina capacity. Sources: Grand View Research · 360 Research Reports · Yachttrading · Yachtpedia · Lengers Yachts · 2024–2026.</p>
+  </div>
+</section>
+
+<!-- ═══ S7X — BENCHMARKS (berth-rate proof, backup for revenue challenge) ═══ -->
+<section class="section s-lighter" id="s7x">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="eyebrow eyebrow-gold">07 · The Winter Yacht Program · Benchmarked</div>
+    <div class="headline">Our assumptions, priced against <em>the world.</em></div>
+    <div class="divider"></div>
+    <div class="subhead">The winter fleet: 60–80ft catamarans through FX Yachting, with the bulk in 35–50ft monohulls. The model assumes $1,000–1,800 per yacht per month — below is what comparable berths cost across the Mediterranean and the Gulf.</div>
+
+    <div style="border:var(--border-navy);margin:32px 0 24px;font-size:12px">
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;background:rgba(7,25,46,0.06);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)">
+        <div style="padding:12px 16px">Market</div><div style="padding:12px 16px">35–50ft Monohull · /mo</div><div style="padding:12px 16px">60–80ft Catamaran · /mo</div><div style="padding:12px 16px">Basis</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Türkiye · Marmaris &amp; Göcek</div><div style="padding:14px 16px">$1,000–2,950</div><div style="padding:14px 16px">$1,750–4,750</div><div style="padding:14px 16px;color:var(--text-secondary)">Wet berth at €3–6 per metre per day — the Med's value tier</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">French Med · 32-port survey</div><div style="padding:14px 16px">~$465 <span style="color:var(--text-muted)">(12m)</span></div><div style="padding:14px 16px">~$655 <span style="color:var(--text-muted)">(12m cat)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">Municipal annual contracts (2021, risen since) · catamaran premium ≈ +40%</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Premium Med · winter monthly</div><div style="padding:14px 16px;grid-column:span 2">$2,000–5,000 <span style="color:var(--text-muted)">(12–20m, indicative)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">Peak €150–500+/night for 12–20m; winter ≈ half of summer, long-term −20–30%</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Dubai Marina</div><div style="padding:14px 16px;grid-column:span 2">$680–3,400 <span style="color:var(--text-muted)">(by vessel size)</span></div><div style="padding:14px 16px;color:var(--text-secondary)">AED 30,000–150,000 per year</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 1.3fr 2.4fr;border-top:var(--border-navy)">
+        <div style="padding:14px 16px;font-weight:600;color:var(--text-primary)">Dubai Harbour · new build</div><div style="padding:14px 16px;grid-column:span 2">from ~$1,810 · prime peak $2,700+</div><div style="padding:14px 16px;color:var(--text-secondary)">Annual from AED 80,000 mid-size · peak season runs Nov–Apr</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 4fr;border-top:2px solid var(--gold);background:rgba(201,168,76,0.08)">
+        <div style="padding:16px;font-weight:700;color:var(--text-primary)">SOMABAY · model assumption</div><div style="padding:16px;font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--gold)">$1,000–1,800 per yacht per month — above the value tier, below premium winter rates</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--gold)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">The Same Window</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">The Gulf's peak marina season is November–April — the region's premium marinas price highest in exactly the months SOMABAY sells.</div></div>
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--teal)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Catamaran Upside</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Wide-beam vessels carry a documented berth premium (~+40% in the French survey). 15 of the 30 dedicated berths are catamaran berths — upside not fully modeled.</div></div>
+      <div style="padding:18px 20px;border:var(--border-navy);border-top:3px solid var(--gold)"><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Conservative by Design</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.6">The model prices SOMABAY as a value-competitive winter home at a world-class standard — not a discount play, and not a stretch.</div></div>
+    </div>
+    <p style="font-size:10px;color:var(--text-muted);margin-top:20px;font-style:italic">Sources: Voiles et Voiliers 32-port French Mediterranean survey (2021) · Marmaris/Göcek wet-berth market rates (2026) · Dubai marina market data (2025–26). Long-term contracts typically discount 10–20% vs monthly rates. USD conversions approximate.</p>
+  </div>
+</section>
+
+<!-- ═══ S7C — THE GLOBAL NETWORK (merged from gouna · 07 The Global Network) ═══ -->
+<!-- IMAGE BREAK — WINTER FLEET -->  <!-- SWAP: src below -> your wintering yachts / marina at berth photo -->
+<section style="height:70vh;min-height:380px;background-image:url('luxury.jpg');background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end;padding:48px 72px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.78) 0%,transparent 58%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The Winter Fleet</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,38px);font-weight:700;color:#fff;line-height:1.15">A warm-water home<br><em style="color:#c9a84c">when Europe closes.</em></div>
+  </div>
+</section>
+
+<section class="section s-white" id="s7c">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.6 7.6 10.8 16M17.4 7.6 13.2 16M7 6h10"/></svg>
+    <div class="eyebrow">08 · The Global Network</div>
+    <div class="headline">A Yacht Club That <em>Opens Doors.</em></div>
+    <div class="divider"></div>
+    <div class="subhead">Yacht clubs are not just facilities — they are networks. A recognised SOMABAY Yacht Club, with the right affiliations, places SOMABAY on itineraries it currently doesn't appear on, and opens access to events, fleets, and audiences no marketing budget can buy.</div>
+    <div class="grid g3" style="margin-top:8px">
+      <div style="border:0.5px solid rgba(28,114,147,0.4);background:#fff;overflow:hidden">
+        <div style="aspect-ratio:16/9;overflow:hidden"><!-- SWAP: Sister Clubs · Mediterranean photo --><img loading="lazy" src="world.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:20px 22px">
+          <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Sister Clubs · Mediterranean</div>
+          <div class="card-body">Reciprocal membership with clubs in Greece, Croatia, Malta, and Cyprus. Their members visit SOMABAY; ours sail their waters. Events travel both ways.</div>
+        </div>
+      </div>
+      <div style="border:var(--border-navy);background:#fff;overflow:hidden">
+        <div style="aspect-ratio:16/9;overflow:hidden"><!-- SWAP: Regional Circuit · Gulf photo --><img loading="lazy" src="drone2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:20px 22px">
+          <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Regional Circuit · Gulf</div>
+          <div class="card-body">Dubai, Muscat, Abu Dhabi. A Red Sea–Gulf circuit with SOMABAY as the Egyptian anchor — a natural winter triangle for Gulf-based owners.</div>
+        </div>
+      </div>
+      <div style="border:0.5px solid rgba(28,114,147,0.4);background:#fff;overflow:hidden">
+        <div style="aspect-ratio:16/9;overflow:hidden"><!-- SWAP: Event Exchange · Regatta photo --><img loading="lazy" src="world-clubs.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:20px 22px">
+          <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Event Exchange · Regatta</div>
+          <div class="card-body">Sister clubs bring their events here; SOMABAY's regattas travel to their waters. A compounding calendar that builds audience and fleet year on year.</div>
+        </div>
+      </div>
+    </div>
+    <div class="quote" style="margin-top:32px"><p>The global sailing world is a relationship network. A SOMABAY Yacht Club, properly affiliated, holds a seat at a table most Red Sea destinations never reach — and it can start building toward it now.</p></div>
+  </div>
+</section>
+
+<!-- ═══ S9 — TIMELINE ═══ -->
+<section class="section s-light" id="s9">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h6a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7"/></svg>
+    <div class="eyebrow eyebrow-gold">09 · 2026 Launch Roadmap</div>
+    <div class="headline">A Phased Path to <em>Full Club Operations</em></div>
+    <div class="divider"></div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Mar 2026 · Delivered ✓</div><div class="tl-title">Branded Sailing Activation</div><div class="tl-body">First branded sailing presence at SOMABAY — proof of concept delivered, with visibility across key stakeholders and guests.</div></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">May 14–16 · Delivered ✓</div><div class="tl-title">SOMABAY Sailing Festival</div><div class="tl-body">15 cruising yachts and a Federation youth fleet — 23 boats and 150+ participants in total. Sailing village, VIPs, and 490K organic views in May alone.</div></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">Q3 2026</div><div class="tl-title">Charter & School Launch</div><div class="tl-body">Charter operations begin. Sailing school Phase 1 opens for hotel guests, residents, and students.</div></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-date">Oct 2026</div><div class="tl-title">Marina Grand Opening</div><div class="tl-body">Celebratory regatta. 20 international brokers. VIP showcase. Official Yacht Club launch event.</div></div></div>
+      <div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-card"><div class="tl-date tl-date-gold">Q4 2026</div><div class="tl-title">Yacht Club Launch</div><div class="tl-body">Full club structure, membership programme, and winter yacht program fully operational.</div></div></div>
+    </div>
+    <!-- ░░ MERGED FROM GOUNA · 08 The Roadmap — multi-year scaling outlook ░░ -->
+    <div style="margin-top:48px;padding-top:32px;border-top:0.5px solid var(--border-navy)">
+      <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px">Beyond Launch — The Direction of Travel</div>
+      <div class="subhead" style="margin-bottom:24px">Once the club is live, the winter programme scales in conservative phases — both tracks reinforcing each other as marina capacity and reputation grow together.</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+        <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--teal)">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2026</div>
+          <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Open the Door</div>
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Sailing festival delivered · club established · winter pilot of 10–15 yachts. Show what's possible.</div>
+        </div>
+        <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--gold)">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2027</div>
+          <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Programme Growing</div>
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Multiple events · FX fleet integrated · Gulf owners invited · European press. Winter at 20–30 yachts.</div>
+        </div>
+        <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--teal)">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2028</div>
+          <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Recognition</div>
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">International media · broker programme · sister-club outreach · World Sailing recognition application.</div>
+        </div>
+        <div style="padding:20px;border:var(--border-navy);border-top:3px solid var(--gold)">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--text-primary)">2029 +</div>
+          <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">At Scale</div>
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Full marina capacity unlocks the winter series at 50–70 yachts · SOMABAY a named international sailing address.</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--text-muted);margin-top:14px;font-style:italic">Forward years are directional, not fixed commitments — pace follows marina capacity and shared decisions.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ S-BEYOND — BEYOND THE HORIZON (merged from gouna · Beyond the Roadmap) ═══ -->
+<section class="section s-navy" id="s-beyond">
+  <div class="corner corner-white">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg>
+    <div class="eyebrow eyebrow-gold">10 · Beyond the Horizon</div>
+    <div class="headline headline-white">Where This Goes <em>With the Right Partner.</em></div>
+    <div class="divider"></div>
+    <div class="subhead" style="color:rgba(255,255,255,0.7)">Consistent delivery opens doors most Red Sea destinations never reach. These are the conversations the partnership puts on the table.</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px">
+      <div style="border:0.5px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.03)">
+        <div style="aspect-ratio:16/9;overflow:hidden"><img loading="lazy" src="clipper.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:22px 24px">
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Global Ocean Race</div>
+          <div style="font-family:var(--font-display);font-size:19px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px">Clipper Round the World Race</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,0.55);line-height:1.7">Stopover port · global broadcast · ocean racers at SOMABAY · destination marketing at scale.</div>
+        </div>
+      </div>
+      <div style="border:0.5px solid rgba(201,168,76,0.3);background:rgba(255,255,255,0.03)">
+        <div style="aspect-ratio:16/9;overflow:hidden"><img loading="lazy" src="marti-world.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:22px 24px">
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">World Sailing</div>
+          <div style="font-family:var(--font-display);font-size:19px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px">World Sailing Recognised Event</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,0.55);line-height:1.7">A historic first for the Red Sea · SOMABAY alongside Sydney, Palma, Kiel · RSS leads the application.</div>
+        </div>
+      </div>
+      <div style="border:0.5px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.03)">
+        <div style="aspect-ratio:16/9;overflow:hidden"><img loading="lazy" src="swan.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+        <div style="padding:22px 24px">
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">International Circuit</div>
+          <div style="font-family:var(--font-display);font-size:19px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px">ORC · Swan Cup · Superyacht Series</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,0.55);line-height:1.7">Named circuit stop · returning fleet every year · same owners, same guests, compounding value.</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding:24px 28px;border-left:3px solid var(--gold);background:rgba(255,255,255,0.04)">
+      <p style="font-family:var(--font-display);font-size:16px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.7;margin:0">The roadmap is the application. By 2029, SOMABAY holds a hand worth playing — and that conversation needs strategy, and the right partner at the table.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK — BEACH LIFESTYLE -->
+<section style="height:95vh;min-height:400px;position:relative;display:flex;align-items:flex-end;padding:48px 72px;overflow:hidden;background:#07192e;">
+  <video id="somaVid" autoplay muted loop playsinline preload="metadata" poster="beach.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;">
+    <source src="soma_group.mp4" type="video/mp4">
+    <img loading="lazy" src="beach.jpg" alt="Soma Bay Sailing Festival" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+  </video>
+  <button onclick="var v=document.getElementById('somaVid');v.muted=!v.muted;this.querySelector('.ic-off').style.display=v.muted?'block':'none';this.querySelector('.ic-on').style.display=v.muted?'none':'block';this.setAttribute('aria-label',v.muted?'Unmute video':'Mute video');" aria-label="Unmute video" style="position:absolute;top:24px;right:24px;z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.5);background:rgba(7,25,46,0.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;padding:0">
+    <svg class="ic-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:block"><path d="M11 5 6 9H2v6h4l5 4z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+    <svg class="ic-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg>
+  </button>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,25,46,0.3) 0%,transparent 40%);z-index:1"></div>
+  <div style="position:relative;z-index:2">
+    <div style="font-size:10px;letter-spacing:4px;color:rgba(201,168,76,0.9);text-transform:uppercase;margin-bottom:10px">The SOMABAY Experience</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:#ffffff;line-height:1.2">The destination is ready.<br><em style="color:#c9a84c">The partnership begins now.</em></div>
+  </div>
+</section>
+
+<!-- ═══ S10 — THE ASK ═══ -->
+<section class="section s-white" id="s10">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+    <div class="eyebrow">11 · The Partnership Ask</div>
+    <div class="headline">A Partnership Built on <em>Clear Commitments</em></div>
+    <div class="divider divider-teal"></div>
+    <div class="subhead" style="margin-bottom:32px">A modest, concrete start — then a phased set of commitments that grow with the club.</div>
+
+    <!-- IMMEDIATE — highlighted navy panel -->
+    <div style="background:var(--bg-navy);padding:32px;position:relative;margin-bottom:32px">
+      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c9a84c"></div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">
+        <div style="font-family:var(--font-display);font-size:21px;font-weight:700;color:#fff">What We're Asking — To Begin</div>
+        <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a84c">Immediate · 2026</div>
+      </div>
+      <div style="font-size:12.5px;color:rgba(255,255,255,0.6);line-height:1.7;max-width:640px;margin-bottom:24px">A low-friction start that lets us stand up operations now — while the permanent marina and clubhouse are built.</div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+        <div style="padding:22px;border:0.5px solid rgba(255,255,255,0.14);border-left:3px solid #c9a84c">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:#c9a84c;margin-bottom:8px">01</div>
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:8px">Operations Base & Temporary Clubhouse</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.7">A space within SOMABAY for club operations, a prefab/container as a temporary clubhouse — used while we set up and the permanent structure is built.</div>
+        </div>
+        <div style="padding:22px;border:0.5px solid rgba(255,255,255,0.14);border-left:3px solid #c9a84c">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:#c9a84c;margin-bottom:8px">02</div>
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:8px">Docking for the Base</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.7">Docking space at the marina to operate and provide exposure while we prepare for the season.</div>
+        </div>
+        <div style="padding:22px;border:0.5px solid rgba(255,255,255,0.14);border-left:3px solid #c9a84c">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:#c9a84c;margin-bottom:8px">03</div>
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:8px">Berths from September / October</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.7">Several berths from the start of the autumn season for the yachts we bring to SOMABAY — both locally-owned vessels and the FX Winter Program fleet.</div>
+        </div>
+        <div style="padding:22px;border:0.5px solid rgba(255,255,255,0.14);border-left:3px solid #c9a84c">
+          <div style="font-family:var(--font-display);font-size:22px;font-weight:700;color:#c9a84c;margin-bottom:8px">04</div>
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:8px">Co-Branding & Naming</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.7">Joint branding of the SOMABAY Yacht Club — establishing it as a permanent SOMABAY institution co-founded with Red Sea Sails.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AS WE SCALE — light -->
+    <div style="display:flex;align-items:center;gap:12px;margin:0 0 16px">
+      <span style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);font-weight:600">As We Scale</span>
+      <span style="flex:1;height:1px;background:var(--border-navy)"></span>
+    </div>
+    <div class="ask-grid">
+      <div class="ask-item"><div class="ask-num">05</div><div><div class="ask-title">Permanent Clubhouse & Beach</div><div class="ask-body">A dedicated permanent home for the club within the completed marina, with a club beach amenity for members and guests.</div></div></div>
+      <div class="ask-item"><div class="ask-num">06</div><div><div class="ask-title">Expanding Berth Allocation</div><div class="ask-body">A growing allocation of sailing yacht berths as the winter fleet and resident community scale — building to 30 dedicated sailing berths (15 catamaran, 15 monohull) at marina completion, managed by RSS under the Club.</div></div></div>
+      <div class="ask-item"><div class="ask-num">07</div><div><div class="ask-title">Event Support</div><div class="ask-body">SOMABAY's active participation in hosting events: accommodation, F&B access, venue support, local permissions, and marketing amplification.</div></div></div>
+      <div class="ask-item"><div class="ask-num">08</div><div><div class="ask-title">Commercial Framework</div><div class="ask-body">A mutually beneficial agreement covering revenue sharing, berth fee structures, charter referrals, and school operations — to be defined together.</div></div></div>
+      <div class="ask-item"><div class="ask-num">09</div><div><div class="ask-title">Strategic Commitment</div><div class="ask-body">A long-term partnership framing — not a seasonal arrangement. The SOMABAY Yacht Club is a permanent institution, and we are committed to building it as one.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S11 — CLOSING ═══ -->
+<section class="section s-lighter" id="s11">
+  <div class="corner">SOMABAY YACHT CLUB · 2026</div>
+  <div class="content">
+    <div class="closing-wrap">
+      <div>
+        <div class="eyebrow eyebrow-gold">Next Steps</div>
+        <div class="headline">Let's Build Something <em>Unprecedented Together</em></div>
+        <div class="divider"></div>
+        <div class="subhead" style="margin-bottom:0">The SOMABAY Yacht Club is a first-of-its-kind institution for the Egyptian Red Sea. Red Sea Sails brings the operational expertise, the network, and eleven years of earned credibility. SOMABAY brings the world-class destination. Together, we create something neither could build alone.</div>
+      </div>
+      <div>
+        <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:20px">Proposed Next Step</div>
+        <div style="padding:28px 32px;background:var(--bg-primary);border:var(--border-gold);border-left:3px solid var(--gold);margin-bottom:24px">
+          <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:12px">The conversation has already started</div>
+          <div style="font-size:13px;color:var(--text-secondary);line-height:1.75">We've met. We've aligned on the vision. The next step is simple — let's sit together, define the framework, and set this in motion.</div>
+        </div>
+        <div class="contact-block">
+          <div style="font-size:9px;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:16px">Red Sea Sails — Contact</div>
+          <div class="c-row"><span class="c-label">Email</span><span class="c-val"><a href="mailto:mo@redseasails.com" style="color:var(--text-secondary);text-decoration:none">mo@redseasails.com</a></span></div>
+          <div class="c-row"><span class="c-label">Phone</span><span class="c-val">+20 1270 247 317 · +20 120 6560 777</span></div>
+          <div class="c-row"><span class="c-label">Web</span><span class="c-val"><a href="https://www.redseasails.com" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none">www.redseasails.com</a></span></div>
+<div class="c-row"><span class="c-label">Web</span><span class="c-val"><a href="https://www.redsearegatta.com" target="_blank" rel="noopener" style="color:var(--text-secondary);text-decoration:none">www.redsearegatta.com</a></span></div>
+        </div>
+        <div class="closing-quote">
+          <p>A defining sailing address for the Red Sea — starting at SOMABAY.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const sections = document.querySelectorAll('.section');
+const navWrap  = document.getElementById('navDots');
+sections.forEach((s,i)=>{
+  const d = document.createElement('div');
+  d.className =
