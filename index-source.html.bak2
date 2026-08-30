@@ -898,8 +898,14 @@
         <div class="pillar-name">Retail &amp; Chandlery</div>
         <div class="pillar-desc">A sailing retail and chandlery outlet within the permanent clubhouse &mdash; equipment, technical clothing, safety gear, and SOMABAY Yacht Club branded apparel for members, berth holders, students, and resort guests.</div>
       </div>
+      <div class="pillar-item">
+        <svg class="s-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c9784a" stroke-width="1.5"><path d="M3 18h18"/><path d="M6 18V9l6-5 6 5v9"/><path d="M12 4v14"/></svg>
+        <div class="pillar-tag">Pillar 07</div>
+        <div class="pillar-name">Winter Yacht Program</div>
+        <div class="pillar-desc">A European fleet wintering at SOMABAY from October through April with FX Yachting &mdash; SOMABAY as the fleet&rsquo;s Red Sea home port. A pillar in its own right, distinct from local charter.</div>
+      </div>
       <div class="pillar-winter">
-        <span><strong>Pillar 07 &nbsp;·&nbsp; FX–RSS Winter Yacht Program</strong> &nbsp;·&nbsp; October through April &nbsp;·&nbsp; Red Sea Season</span>
+        <span><strong>+ FX–RSS Winter Yacht Program</strong> &nbsp;·&nbsp; October through April &nbsp;·&nbsp; Red Sea Season</span>
         <span style="font-size:10px;letter-spacing:2px;opacity:0.8">EUROPEAN FLEET · HNW CHARTER GUESTS</span>
       </div>
     </div>
